@@ -60,7 +60,7 @@ import { RouterActive } from './router-active';
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
   loading = false;
-  name = 'Angular 2 Webpack Starter';
+  name = '52°North @ GitHub';
   url = 'https://twitter.com/AngularClass';
 
   constructor(
