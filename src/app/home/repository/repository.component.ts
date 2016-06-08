@@ -6,8 +6,7 @@ import { Repository } from '../../model';
   providers: [],
   directives: [],
   pipes: [],
-//  styles: [require('./repo.component.css')],
-  template: require('./repo.component.html')
+  template: require('./repository.component.html')
 })
 export class RepositoryComponent implements OnInit{
   @Input()
