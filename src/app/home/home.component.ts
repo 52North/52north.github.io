@@ -1,47 +1,72 @@
-import { Component } from '@angular/core';
-
-import { AppState } from '../app.service';
+import { Component, OnInit } from '@angular/core';
 import { Title } from './title';
 import { XLarge } from './x-large';
+import { Repositories, Repository, RepositoryComponent } from './repositories';
 
 @Component({
   // The selector is what angular internally uses
   // for `document.querySelectorAll(selector)` in our index.html
   // where, in this case, selector is the string 'home'
-  selector: 'home',  // <home></home>
+  selector: 'home',
   // We need to tell Angular's Dependency Injection which providers are in our app.
   providers: [
-    Title
+    Title,
+    Repositories
   ],
   // We need to tell Angular's compiler which directives are in our template.
   // Doing so will allow Angular to attach our behavior to an element
   directives: [
-    XLarge
+    XLarge,
+    RepositoryComponent
   ],
   // We need to tell Angular's compiler which custom pipes are in our template.
-  pipes: [ ],
+  pipes: [],
   // Our list of styles in our component. We may add more to compose many styles together
-  styles: [ require('./home.css') ],
+  styles: [require('./home.css')],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  template: require('./home.html')
+  template: require('./home.component.html')
 })
-export class Home {
-  // Set our default values
-  localState = { value: '' };
-  // TypeScript public modifiers
-  constructor(public appState: AppState, public title: Title) {
+export class Home implements OnInit {
+  repositories = new Array<Repository>();
 
-  }
+  private categories: Array<string> = require('assets/configs/categories.json');
+
+  selectedCategory = "all";
+
+  constructor(
+    public title: Title,
+    public repoService: Repositories
+  ) { }
 
   ngOnInit() {
-    console.log('hello `Home` component');
-    // this.title.getData().subscribe(data => this.data = data);
+    this.repoService.getSingleRepos().subscribe(repos => this.repositories = repos);
   }
 
-  submitState(value) {
-    console.log('submitState', value);
-    this.appState.set('value', value);
-    this.localState.value = '';
+  sortByForks() {
+    this.repositories = this.repositories.sort((entry1, entry2) => {
+      return entry2.forks_count - entry1.forks_count
+    });
   }
 
+  sortByWatches() {
+    this.repositories = this.repositories.sort((entry1, entry2) => {
+      return entry2.watchers_count - entry1.watchers_count
+    });
+  }
+
+  sortByStars() {
+    this.repositories = this.repositories.sort((entry1, entry2) => {
+      return entry2.stargazers_count - entry1.stargazers_count
+    });
+  }
+
+  sortByLastUpdate() {
+    this.repositories = this.repositories.sort((entry1, entry2) => {
+      return new Date(entry2.updated_at).getTime() - new Date(entry1.updated_at).getTime()
+    });
+  }
+
+  showCategory(category: string) {
+    this.selectedCategory = category;
+  }
 }

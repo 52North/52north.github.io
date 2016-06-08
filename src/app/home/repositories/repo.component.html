@@ -1,0 +1,25 @@
+<md-card>
+  <!--<md-card-header>-->
+    <!--<img md-card-avatar src="https://material.angularjs.org/latest/img/washedout.png">-->
+    <md-card-title>{{repository.name}}</md-card-title>
+    <md-card-subtitle>
+      <span>last update: {{getLastUpdated() | date}}</span>
+      <span> | </span>
+      <span>stars: {{repository.stargazers_count}}</span>
+      <span> | </span>
+      <span>watches: {{repository.watchers_count}}</span>
+      <span> | </span>
+      <span>forks: {{repository.forks_count}}</span>
+      <span> | </span>
+      <span>categories: {{repository.categories}}</span>
+    </md-card-subtitle>
+  <!--</md-card-header>-->
+  <md-card-content>
+    <div>
+      {{repository.description}}
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-raised-button color="primary" (click)="toRepository()">Repository</button>
+  </md-card-actions>
+</md-card>

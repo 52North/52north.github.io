@@ -1,0 +1,17 @@
+<div class="card-container">
+
+  <md-toolbar>
+    <button md-button (click)="showCategory('all')">all</button>
+    <button md-button (click)="showCategory('SensorWeb')">SensorWeb</button>
+    <button md-button (click)="showCategory('GeoProcessing')">GeoProcessing</button>
+    <button md-button (click)="showCategory('ILWIS')">ILWIS</button>
+    <span class="fill"></span>
+    <button md-button (click)="sortByForks()">forks</button>
+    <button md-button (click)="sortByWatches()">watches</button>
+    <button md-button (click)="sortByStars()">stars</button>
+    <button style="float: right;" md-button (click)="sortByLastUpdate()">updated</button>
+  </md-toolbar>
+
+  <repository *ngFor="let repo of repositories" [hidden]="repo.categories.indexOf(selectedCategory) === -1 && selectedCategory != 'all'" [repository]="repo"></repository>
+
+</div>
