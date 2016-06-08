@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Repository } from '../model';
-import { Repositories, RepositoryComponent } from './repositories';
+import { Repositories, RepositoryComponent } from './repository';
 
 @Component({
   // The selector is what angular internally uses
