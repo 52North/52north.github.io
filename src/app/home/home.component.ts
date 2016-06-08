@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from './title';
-import { XLarge } from './x-large';
-import { Repositories, Repository, RepositoryComponent } from './repositories';
+import { Repository } from '../model';
+import { Repositories, RepositoryComponent } from './repositories';
 
 @Component({
   // The selector is what angular internally uses
@@ -10,13 +9,11 @@ import { Repositories, Repository, RepositoryComponent } from './repositories';
   selector: 'home',
   // We need to tell Angular's Dependency Injection which providers are in our app.
   providers: [
-    Title,
     Repositories
   ],
   // We need to tell Angular's compiler which directives are in our template.
   // Doing so will allow Angular to attach our behavior to an element
   directives: [
-    XLarge,
     RepositoryComponent
   ],
   // We need to tell Angular's compiler which custom pipes are in our template.
@@ -34,7 +31,6 @@ export class Home implements OnInit {
   selectedCategory = "all";
 
   constructor(
-    public title: Title,
     public repoService: Repositories
   ) { }
 

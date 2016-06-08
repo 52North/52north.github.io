@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Repository } from './repository';
+import { Repository } from '../../model';
 
 @Component({
   selector: 'repository',

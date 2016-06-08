@@ -20,8 +20,6 @@ import { RouterActive } from './router-active';
 @RouteConfig([
   { path: '/', name: 'Index', component: Home, useAsDefault: true },
   { path: '/home', name: 'Home', component: Home },
-  // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') }
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
