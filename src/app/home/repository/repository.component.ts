@@ -20,5 +20,4 @@ export class RepositoryComponent implements OnInit {
     public getLastUpdated(): Date {
         return new Date(this.repository.updated_at);
     }
-
 }
