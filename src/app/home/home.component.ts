@@ -11,24 +11,17 @@ import { Repositories, RepositoryComponent } from './repository';
   providers: [
     Repositories
   ],
-  // We need to tell Angular's compiler which directives are in our template.
-  // Doing so will allow Angular to attach our behavior to an element
-  directives: [
-    RepositoryComponent
-  ],
-  // We need to tell Angular's compiler which custom pipes are in our template.
-  pipes: [],
   // Our list of styles in our component. We may add more to compose many styles together
-  styles: [require('./home.css')],
+  styleUrls: [ './home.style.css' ],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  template: require('./home.component.html')
+  templateUrl: './home.template.html'
 })
 export class Home implements OnInit {
   repositories = new Array<Repository>();
 
-  private categories: Array<string> = require('assets/configs/categories.json');
+  protected selectedCategory = 'all';
 
-  selectedCategory = "all";
+  private categories: Array<string> = require('assets/configs/categories.json');
 
   constructor(
     public repoService: Repositories
@@ -40,25 +33,25 @@ export class Home implements OnInit {
 
   sortByForks() {
     this.repositories = this.repositories.sort((entry1, entry2) => {
-      return entry2.forks_count - entry1.forks_count
+      return entry2.forks_count - entry1.forks_count;
     });
   }
 
   sortByWatches() {
     this.repositories = this.repositories.sort((entry1, entry2) => {
-      return entry2.watchers_count - entry1.watchers_count
+      return entry2.watchers_count - entry1.watchers_count;
     });
   }
 
   sortByStars() {
     this.repositories = this.repositories.sort((entry1, entry2) => {
-      return entry2.stargazers_count - entry1.stargazers_count
+      return entry2.stargazers_count - entry1.stargazers_count;
     });
   }
 
   sortByLastUpdate() {
     this.repositories = this.repositories.sort((entry1, entry2) => {
-      return new Date(entry2.updated_at).getTime() - new Date(entry1.updated_at).getTime()
+      return new Date(entry2.updated_at).getTime() - new Date(entry1.updated_at).getTime();
     });
   }
 
