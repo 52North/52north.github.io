@@ -57,4 +57,4 @@ npm-debug.log
 # IDE #
 .idea/
 *.swp
-/nbproject/private/
+/nbproject/
