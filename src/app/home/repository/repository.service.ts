@@ -12,6 +12,7 @@ import 'rxjs/add/observable/forkJoin';
 export class Repositories {
 
     private repoUrl = '/assets/data/';
+    private repoReleaseUrl = '/assets/data/release/';
 
     private additionals: Array<RepositoryConfig> = require('assets/configs/repositories.json');
 
@@ -19,7 +20,7 @@ export class Repositories {
         private http: Http
     ) { }
 
-    getSingleRepos(): Observable<Repository[]> {
+    public getSingleRepos(): Observable<Repository[]> {
         let requests: Array<Observable<Repository>> = [];
         this.additionals.forEach(entry => {
             requests.push(this.getRepo(entry));
@@ -27,18 +28,31 @@ export class Repositories {
         return Observable.forkJoin(requests);
     }
 
-    getRepo(config: RepositoryConfig): Observable<Repository> {
+    public getRepo(config: RepositoryConfig): Observable<Repository> {
         return this.http.get(this.repoUrl + config.name + '.json')
             .map((res) => {
-                return this.extractData(res, config);
+                return this.extractRepository(res, config);
             })
             .catch(this.handleError);
     }
 
-    private extractData(res: Response, config: RepositoryConfig) {
+    public getReleaseOfRepo(repo: Repository): Observable<any> {
+        return this.http.get(this.repoReleaseUrl + repo.name + '.json')
+            .map((res) => {
+                return this.extractRelease(res);
+            })
+            .catch(this.handleError);
+    }
+
+    private extractRepository(res: Response, config: RepositoryConfig) {
         let body = res.json() as Repository;
         body.categories = config.categories;
         return body || {};
+    }
+
+    private extractRelease(res: Response) {
+        let body = res.json();
+        return body;
     }
 
     private handleError(error: any) {

@@ -26,5 +26,6 @@
   </md-card-content>
   <md-card-actions>
     <button md-raised-button color="primary" (click)="toRepository()">Repository</button>
+    <button *ngIf="release" md-raised-button color="primary" (click)="toRelease()">{{release.name}}</button>
   </md-card-actions>
 </md-card>
