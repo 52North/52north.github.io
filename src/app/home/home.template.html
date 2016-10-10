@@ -1,4 +1,3 @@
-
 <!--<md-toolbar>
     <button md-button (click)="showCategory('all')">all</button>
     <button md-button *ngFor="let cat of categories" (click)="showCategory(cat.name)">{{cat.name}}</button>
@@ -10,7 +9,9 @@
 </md-toolbar>-->
 
 <div class="row">
-  <div class="col-xs-12 col-sm-6 col-lg-4 grid-example" *ngFor="let repo of repositories">
-      <repository [hidden]="repo.categories.indexOf(appState.state.selectedCategory) === -1 && appState.state.selectedCategory != 'all'" [repository]="repo"></repository>
+  <div *ngFor="let repo of repositories">
+    <div class="col-xs-12 col-sm-6 col-lg-4 grid-example" *ngIf="repo.categories.indexOf(appState.state.selectedCategory) > -1 || appState.state.selectedCategory === 'all'">
+      <repository [repository]="repo"></repository>
+    </div>
   </div>
 </div>

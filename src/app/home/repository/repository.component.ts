@@ -4,7 +4,7 @@ import { Repositories } from './repository.service';
 
 @Component({
     selector: 'repository',
-    providers: [],
+    styles: [require('./repository.styles.scss')],
     template: require('./repository.component.html')
 })
 export class RepositoryComponent implements OnInit {
