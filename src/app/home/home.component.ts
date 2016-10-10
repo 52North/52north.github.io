@@ -49,7 +49,7 @@ export class Home implements OnInit {
 
     sortByLastUpdate() {
         this.repositories = this.repositories.sort((entry1, entry2) => {
-            return new Date(entry2.updated_at).getTime() - new Date(entry1.updated_at).getTime();
+            return new Date(entry2.pushed_at).getTime() - new Date(entry1.pushed_at).getTime();
         });
     }
 
