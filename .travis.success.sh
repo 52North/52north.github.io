@@ -13,7 +13,7 @@ git config --global user.name "${github_name}"
 git config --global user.email "${github_mail}"
 git clone --quiet --depth 1 --branch "${branch}" "${repo_url}" "${deploy_dir}"
 
-rm -rf "${deploy_dir:?}/${TRAVIS_BRANCH}"
+rm -rf "${deploy_dir:?}/."
 cp -rv dist "${deploy_dir}/"
 
 pushd "${deploy_dir}"
