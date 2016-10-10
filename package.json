@@ -8,7 +8,7 @@
   "scripts": {
     "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
     "build:docker": "npm run build:prod && docker build -t 52north-github-io:latest .",
-    "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
+    "build:prod": "npm run create-github-data && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build": "npm run build:dev",
     "ci": "npm run lint && npm test && npm run e2e",
     "clean:dist": "npm run rimraf -- dist",
@@ -40,7 +40,7 @@
     "start:hmr": "npm run server:dev:hmr",
     "start": "npm run server:dev",
     "test": "karma start",
-    "tslint": "tslint",
+    "tslint": "tslint 'src/app/**/*.ts'",
     "typedoc": "typedoc",
     "version": "npm run build",
     "watch:dev:hmr": "npm run watch:dev -- --hot",
