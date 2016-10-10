@@ -11,8 +11,8 @@ import 'rxjs/add/observable/forkJoin';
 @Injectable()
 export class Repositories {
 
-    private repoUrl = '/assets/data/';
-    private repoReleaseUrl = '/assets/data/release/';
+    private repoUrl = 'assets/data/';
+    private repoReleaseUrl = 'assets/data/release/';
 
     private additionals: Array<RepositoryConfig> = require('assets/configs/repositories.json');
 
