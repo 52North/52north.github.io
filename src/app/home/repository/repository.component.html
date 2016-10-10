@@ -1,9 +1,7 @@
 <md-card>
-  <!--<md-card-header>-->
-    <!--<img md-card-avatar src="https://material.angularjs.org/latest/img/washedout.png">-->
-    <md-card-title>{{repository.name}}</md-card-title>
+  <md-card-title>{{repository.name}}</md-card-title>
     <md-card-subtitle>
-      <span>last update: {{getLastUpdated() | date}}</span>
+      <span>last update: {{repository.pushed_at | date}}</span>
       <span> | </span>
       <span>stars: {{repository.stargazers_count}}</span>
       <span> | </span>
@@ -18,7 +16,6 @@
       <span> | </span>
       <span>{{repository.size}}Kb</span>
     </md-card-subtitle>
-  <!--</md-card-header>-->
   <md-card-content>
     <div>
       {{repository.description}}

@@ -1,15 +1,16 @@
-<div class="card-container">
 
-  <md-toolbar>
+<!--<md-toolbar>
     <button md-button (click)="showCategory('all')">all</button>
-    <button md-button *ngFor="let cat of categories" (click)="showCategory(cat.name)" >{{cat.name}}</button>
+    <button md-button *ngFor="let cat of categories" (click)="showCategory(cat.name)">{{cat.name}}</button>
     <span class="fill"></span>
     <button md-button (click)="sortByForks()">forks</button>
     <button md-button (click)="sortByWatches()">watches</button>
     <button md-button (click)="sortByStars()">stars</button>
     <button style="float: right;" md-button (click)="sortByLastUpdate()">updated</button>
-  </md-toolbar>
+</md-toolbar>-->
 
-  <repository *ngFor="let repo of repositories" [hidden]="repo.categories.indexOf(selectedCategory) === -1 && selectedCategory != 'all'" [repository]="repo"></repository>
-
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-lg-4 grid-example" *ngFor="let repo of repositories">
+      <repository [hidden]="repo.categories.indexOf(selectedCategory) === -1 && selectedCategory != 'all'" [repository]="repo"></repository>
+  </div>
 </div>
