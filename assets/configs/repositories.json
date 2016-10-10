@@ -1,0 +1,40 @@
+[{
+  "name": "OX-Framework",
+  "categories": ["SensorWeb", "GeoProcessing"]
+}, {
+  "name": "SES",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "SOS",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "SensorWebClient",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "WPS4Aviation",
+  "categories": ["GeoProcessing"]
+}, {
+  "name": "series-rest-api",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "WPS-Extension-Skeleton",
+  "categories": ["GeoProcessing"]
+}, {
+  "name": "WPS",
+  "categories": ["GeoProcessing"]
+}, {
+  "name": "IlwisCore",
+  "categories": ["ILWIS"]
+}, {
+  "name": "IlwisConnectors",
+  "categories": ["ILWIS"]
+}, {
+  "name": "OpenSensorSearch",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "SensorPlanningService",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "wps-js",
+  "categories": ["GeoProcessing"]
+}]
