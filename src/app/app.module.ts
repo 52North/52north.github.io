@@ -17,6 +17,7 @@ import { App } from './app.component';
 import { AppState, InteralStateType } from './app.service';
 import { Home } from './home';
 import { RepositoryComponent } from './home/repository/repository.component';
+import { Categories } from './categories/categories.component';
 import { NoContent } from './no-content';
 
 // Application wide providers
@@ -40,7 +41,8 @@ type StoreType = {
         App,
         Home,
         NoContent,
-        RepositoryComponent
+        RepositoryComponent,
+        Categories
     ],
     imports: [ // import Angular's modules
         BrowserModule,

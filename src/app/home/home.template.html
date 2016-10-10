@@ -11,6 +11,6 @@
 
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-lg-4 grid-example" *ngFor="let repo of repositories">
-      <repository [hidden]="repo.categories.indexOf(selectedCategory) === -1 && selectedCategory != 'all'" [repository]="repo"></repository>
+      <repository [hidden]="repo.categories.indexOf(appState.state.selectedCategory) === -1 && appState.state.selectedCategory != 'all'" [repository]="repo"></repository>
   </div>
 </div>

@@ -1,10 +1,54 @@
-<md-toolbar color="primary">
-  <span>{{ name }}</span>
-  <span class="fill"></span>
-</md-toolbar>
+<div class="site-container">
+  <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="wrap">
+      <nav class="nav-header-right1">
+        <div class="wrap">
+          <ul id="menu-meta-menu-1" class="genesis-nav-menu">
+            <li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52">
+              <a href="https://wiki.52north.org" itemprop="url">Wiki</a>
+            </li>
+            <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+              <a href="http://www-neu.52north.org/download/" itemprop="url">Download</a>
+            </li>
+            <li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55">
+              <a href="https://github.com/52North" itemprop="url">Github</a>
+            </li>
+            <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
+              <a href="http://www-neu.52north.org/discuss/" itemprop="url">Discuss</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-<md-progress-bar mode="indeterminate" color="primary" *ngIf="loading"></md-progress-bar>
+      <nav class="nav-header-right2">
+        <div class="wrap">
+          <ul id="menu-meta-menu-2" class="genesis-nav-menu">
+            <li id="menu-item-412" class="qtranxs-lang-menu qtranxs-lang-menu-de menu-item menu-item-type-custom menu-item-object-custom menu-item-412">
+              <a title="De" href="http://www-neu.52north.org/de/" itemprop="url">De</a>
+            </li>
+            <li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83">
+              <a href="http://blog-neu.52north.org/" itemprop="url">Blog</a>
+            </li>
+            <li id="menu-item-84" class="toggle-search menu-item menu-item-type-custom menu-item-object-custom menu-item-84">
+              <a href="#search-wrap" itemprop="url">Search</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+      <div class="search-wrap" id="toggle-search">
+        <div class="wrap">
+          <form class="search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://www-neu.52north.org/" role="search"><meta itemprop="target" content="http://www-neu.52north.org/?s={s}"/><input itemprop="query-input" type="search" name="s" placeholder="Search this website &#x2026;"/><input type="submit" value="Search"/></form>
+        </div>
+      </div>
+      <nav class="nav-header-main">
+          <categories></categories>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-inner">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

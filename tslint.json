@@ -16,15 +16,13 @@
     "no-var-requires": false,
     "typedef": false,
     "typedef-whitespace": [
-      true,
-      {
+      true, {
         "call-signature": "nospace",
         "index-signature": "nospace",
         "parameter": "nospace",
         "property-declaration": "nospace",
         "variable-declaration": "nospace"
-      },
-      {
+      }, {
         "call-signature": "space",
         "index-signature": "space",
         "parameter": "space",
@@ -61,7 +59,7 @@
     "no-switch-case-fall-through": true,
     "no-unreachable": true,
     "no-unused-expression": true,
-    "no-unused-variable": false,
+    "no-unused-variable": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "radix": true,
@@ -88,8 +86,7 @@
     "no-trailing-whitespace": true,
     "object-literal-sort-keys": false,
     "trailing-comma": [
-      true,
-      {
+      true, {
         "multiline": false,
         "singleline": "never"
       }
