@@ -1,12 +1,12 @@
 [{
-  "name": "OX-Framework",
-  "categories": ["SensorWeb", "GeoProcessing"]
+  "name": "helgoland",
+  "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "SES",
   "categories": ["SensorWeb"]
 }, {
   "name": "SOS",
-  "categories": ["SensorWeb"]
+  "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
@@ -21,10 +21,10 @@
   "categories": ["GeoProcessing"]
 }, {
   "name": "WPS",
-  "categories": ["GeoProcessing"]
+  "categories": ["Featured", "GeoProcessing"]
 }, {
   "name": "IlwisCore",
-  "categories": ["ILWIS"]
+  "categories": ["Featured", "ILWIS"]
 }, {
   "name": "IlwisConnectors",
   "categories": ["ILWIS"]
@@ -37,4 +37,7 @@
 }, {
   "name": "wps-js",
   "categories": ["GeoProcessing"]
+}, {
+  "name": "OX-Framework",
+  "categories": ["SensorWeb"]
 }]
