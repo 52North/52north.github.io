@@ -4,15 +4,20 @@ var fs = require('fs');
 var datafolder = 'src/assets/data/';
 var releasefolder = 'src/assets/data/release/';
 
-// TODO get user-info out of file
+var authToken = createAuthToken()
 
-var auth = createAuth();
+console.log(authToken.substr(0,20));
+
 iterateRepos();
 
-function createAuth() {
-  var data = fs.readFileSync('config/githubBasicAuth.json', 'utf8');
-  var basicAuth = JSON.parse(data);
-  return 'Basic ' + new Buffer(basicAuth.username + ':' + basicAuth.token).toString("base64");
+function createAuthToken() {
+  if (process.argv.length >= 3) {
+    return 'Basic ' + new Buffer(process.argv[2]).toString("base64");
+  } else {
+    var data = fs.readFileSync('config/githubBasicAuth.json', 'utf8');
+    var basicAuth = JSON.parse(data);
+    return 'Basic ' + new Buffer(basicAuth.username + ':' + basicAuth.token).toString("base64");
+  }
 }
 
 function iterateRepos() {
@@ -48,7 +53,7 @@ function createRequestOptions(url) {
     headers: {
       'User-Agent': '52NorthGithubIO',
       'Accept': 'application/vnd.github.drax-preview+json',
-      'Authorization': auth
+      'Authorization': authToken
     }
   }
 }
