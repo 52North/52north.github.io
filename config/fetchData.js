@@ -47,6 +47,7 @@ function createRequestOptions(url) {
     url: url,
     headers: {
       'User-Agent': '52NorthGithubIO',
+      'Accept': 'application/vnd.github.drax-preview+json',
       'Authorization': auth
     }
   }

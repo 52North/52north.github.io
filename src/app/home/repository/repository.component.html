@@ -12,6 +12,7 @@
     </span>
     <i class="fa fa-clock-o" aria-hidden="true"></i>
     <span>{{repository.pushed_at | date}}</span>
+    <div *ngIf="repository.license">{{repository.license.name}}</div>
   </md-card-subtitle>
   <md-card-subtitle>
     <span>{{repository.categories}}</span>
