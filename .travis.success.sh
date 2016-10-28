@@ -13,8 +13,10 @@ git config --global user.name "${github_name}"
 git config --global user.email "${github_mail}"
 git clone --quiet --depth 1 --branch "${branch}" "${repo_url}" "${deploy_dir}"
 
-echo "Remove"
-rm -rv "${deploy_dir}/*"
+echo "clear folder"
+rm -rfv "${deploy_dir}/*"
+
+echo "copy builded client"
 cp -rv dist/* "${deploy_dir}/"
 
 pushd "${deploy_dir}"
