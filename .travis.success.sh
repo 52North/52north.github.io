@@ -14,10 +14,7 @@ git config --global user.email "${github_mail}"
 git clone --quiet --depth 1 --branch "${branch}" "${repo_url}" "${deploy_dir}"
 
 echo "clear folder"
-rm -rfv "${deploy_dir}/*"
-
-echo "list folder content"
-ls "${deploy_dir}/ -l"
+rm -rfv "${deploy_dir}"/*
 
 echo "copy builded client"
 cp -rv dist/* "${deploy_dir}/"
