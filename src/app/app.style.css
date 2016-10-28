@@ -23,6 +23,10 @@ button.active:hover{
 .home{
   flex: 1;
 }
+.genesis-nav-menu li {
+    padding: 7px;
+}
+
 md-content{
   display: flex;
   flex-direction: column;

@@ -1,14 +1,33 @@
 var request = require('request');
 var fs = require('fs');
 
-var datafolder = 'src/assets/data/';
-var releasefolder = 'src/assets/data/release/';
+var assetsFolder = 'src/assets/'
+var datafolder = assetsFolder + 'data/';
+var releasefolder = assetsFolder + 'data/release/';
 
-fs.mkdirSync(datafolder);
-fs.mkdirSync(releasefolder);
+// create data folder if not exists
+try {
+  fs.mkdirSync(datafolder);
+  fs.mkdirSync(releasefolder);
+} catch (e) {
+  console.log("Datafolder are still exists and data will be overrided.");
+}
 
-var authToken = createAuthToken()
+// save the data creation timestamp
+createMetadata();
+
+// create token to communicate with the github api
+var authToken = createAuthToken();
+
+// create repositories
 iterateRepos();
+
+function createMetadata() {
+  var metadata = {
+    timestamp: new Date
+  };
+  fs.writeFile(assetsFolder + 'metadata.json', JSON.stringify(metadata));
+}
 
 function createAuthToken() {
   if (process.argv.length >= 3) {

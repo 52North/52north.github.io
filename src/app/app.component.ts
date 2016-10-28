@@ -19,10 +19,7 @@ export class App {
     name = '52°North @ GitHub';
     // url = 'https://twitter.com/AngularClass';
 
-    constructor(
-        public appState: AppState) {
-
-    }
+    constructor(public appState: AppState) { }
 
     ngOnInit() {
         console.log('Initial App State', this.appState.state);
