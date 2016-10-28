@@ -9,10 +9,12 @@ export class Categories {
 
     public categories: Array<string> = require('assets/configs/categories.json');
 
+    private defaultCategory: String = 'Featured';
+
     constructor(
         private appState: AppState
     ) {
-        this.appState.set('selectedCategory', 'all');
+        this.appState.set('selectedCategory', this.defaultCategory);
     }
 
     showCategory(category: string) {

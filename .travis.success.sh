@@ -16,12 +16,16 @@ git clone --quiet --depth 1 --branch "${branch}" "${repo_url}" "${deploy_dir}"
 echo "clear folder"
 rm -rfv "${deploy_dir}/*"
 
+echo "list folder content"
+ls "${deploy_dir}/ -l"
+
 echo "copy builded client"
 cp -rv dist/* "${deploy_dir}/"
 
 pushd "${deploy_dir}"
 git add --ignore-removal .
 git add --update :/
+git status
 git commit -m "Updating ${TRAVIS_BRANCH} on ${branch} to ${TRAVIS_COMMIT}"
 git push --quiet origin "${branch}"
 popd
