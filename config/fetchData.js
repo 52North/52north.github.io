@@ -6,8 +6,6 @@ var releasefolder = 'src/assets/data/release/';
 
 var authToken = createAuthToken()
 
-console.log(authToken.substr(0,20));
-
 iterateRepos();
 
 function createAuthToken() {
