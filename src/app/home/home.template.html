@@ -11,18 +11,31 @@
 <nav class="nav-header-right2">
   <div class="wrap">
     <ul class="genesis-nav-menu">
-        Sort by:
-      <li class="qtranxs-lang-menu qtranxs-lang-menu-de menu-item menu-item-type-custom menu-item-object-custom">
-        <a (click)="sortByStars()"><i class="fa fa-star" aria-hidden="true"></i></a>
+      Sort by:
+      <li class="menu-item" [class.current-menu-item]="sorting === 'alphabet'">
+        <a (click)="sortByAlphabet()">
+          <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+        </a>
       </li>
-      <li class="qtranxs-lang-menu qtranxs-lang-menu-de menu-item menu-item-type-custom menu-item-object-custom">
-        <a (click)="sortByForks()"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+      <li class="menu-item" [class.current-menu-item]="sorting === 'stars'">
+        <a (click)="sortByStars()">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </a>
       </li>
-      <li class="qtranxs-lang-menu qtranxs-lang-menu-de menu-item menu-item-type-custom menu-item-object-custom">
-        <a (click)="sortByWatches()"><i class="fa fa-eye" aria-hidden="true"></i></a>
+      <li class="menu-item" [class.current-menu-item]="sorting === 'forks'">
+        <a (click)="sortByForks()">
+          <i class="fa fa-code-fork" aria-hidden="true"></i>
+        </a>
       </li>
-      <li class="qtranxs-lang-menu qtranxs-lang-menu-de menu-item menu-item-type-custom menu-item-object-custom">
-        <a (click)="sortByLastUpdate()"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+      <li class="menu-item" [class.current-menu-item]="sorting === 'watches'">
+        <a (click)="sortByWatches()">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="menu-item" [class.current-menu-item]="sorting === 'lastUpdates'">
+        <a (click)="sortByLastUpdate()">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </a>
       </li>
     </ul>
   </div>

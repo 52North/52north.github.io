@@ -18,7 +18,8 @@ import { AppState } from '../app.service';
     templateUrl: './home.template.html'
 })
 export class Home implements OnInit {
-    repositories = new Array<Repository>();
+    public repositories = new Array<Repository>();
+    public sorting: string;
 
     constructor(
         public repoService: Repositories,
@@ -26,30 +27,44 @@ export class Home implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.repoService.getSingleRepos().subscribe(repos => this.repositories = repos);
+        this.repoService.getSingleRepos().subscribe(repos => {
+            this.repositories = repos;
+            this.sortByAlphabet();
+        });
     }
 
     sortByForks() {
+        this.sorting = 'forks';
         this.repositories = this.repositories.sort((entry1, entry2) => {
             return entry2.forks_count - entry1.forks_count;
         });
     }
 
     sortByWatches() {
+        this.sorting = 'watches';
         this.repositories = this.repositories.sort((entry1, entry2) => {
             return entry2.watchers_count - entry1.watchers_count;
         });
     }
 
     sortByStars() {
+        this.sorting = 'stars';
         this.repositories = this.repositories.sort((entry1, entry2) => {
             return entry2.stargazers_count - entry1.stargazers_count;
         });
     }
 
     sortByLastUpdate() {
+        this.sorting = 'lastUpdates';
         this.repositories = this.repositories.sort((entry1, entry2) => {
             return new Date(entry2.pushed_at).getTime() - new Date(entry1.pushed_at).getTime();
+        });
+    }
+
+    sortByAlphabet() {
+        this.sorting = 'alphabet';
+        this.repositories = this.repositories.sort((entry1, entry2) => {
+            return entry1.name.localeCompare(entry2.name);
         });
     }
 
