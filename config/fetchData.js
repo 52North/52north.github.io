@@ -4,8 +4,10 @@ var fs = require('fs');
 var datafolder = 'src/assets/data/';
 var releasefolder = 'src/assets/data/release/';
 
-var authToken = createAuthToken()
+fs.mkdirSync(datafolder);
+fs.mkdirSync(releasefolder);
 
+var authToken = createAuthToken()
 iterateRepos();
 
 function createAuthToken() {
