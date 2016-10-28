@@ -30,7 +30,7 @@
     </div>
     <div class="buttons">
       <button md-raised-button (click)="toRepository()">Repository</button>
-      <button *ngIf="release" md-raised-button (click)="toRelease()">latest release</button>
+      <button *ngIf="release && release.tag_name" md-raised-button (click)="toRelease()">latest release: {{release.tag_name}}</button>
     </div>
   </md-card-content>
 </md-card>
