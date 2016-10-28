@@ -13,12 +13,12 @@ git config --global user.name "${github_name}"
 git config --global user.email "${github_mail}"
 git clone --quiet --depth 1 --branch "${branch}" "${repo_url}" "${deploy_dir}"
 
-rm -rf "${deploy_dir:?}/*"
+rm -rf "${deploy_dir}/*"
 cp -rv dist/* "${deploy_dir}/"
 
 pushd "${deploy_dir}"
 git add --ignore-removal .
 git add --update :/
 git commit -m "Updating ${TRAVIS_BRANCH} on ${branch} to ${TRAVIS_COMMIT}"
-git push origin "${branch}"
+git push --quiet origin "${branch}"
 popd
