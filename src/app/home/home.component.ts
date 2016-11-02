@@ -33,6 +33,17 @@ export class Home implements OnInit {
         });
     }
 
+    textSearch(event: any) {
+        let term = new RegExp(event.target.value, 'gi');
+        this.repositories.forEach(entry => {
+            if (entry.name.match(term) || entry.description.match(term)) {
+                entry.hidden = false;
+            } else {
+                entry.hidden = true;
+            }
+        });
+    }
+
     sortByForks() {
         this.sorting = 'forks';
         this.repositories = this.repositories.sort((entry1, entry2) => {
