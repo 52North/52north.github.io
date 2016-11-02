@@ -23,8 +23,8 @@ button.active:hover{
 .home{
   flex: 1;
 }
-.genesis-nav-menu li {
-    padding: 7px;
+.genesis-nav-menu .last-update {
+    padding: 7px 0px;
 }
 
 md-content{
