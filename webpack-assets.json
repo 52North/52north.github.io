@@ -3,9 +3,9 @@
     "js": "vendor.eca967f6035fce6fb57f.bundle.js"
   },
   "main": {
-    "js": "main.49833f883c445e99f17e.bundle.js"
+    "js": "main.6c52faa1ebd9c8ecb79e.bundle.js"
   },
   "polyfills": {
-    "js": "polyfills.8fd386d9f713b6122ff4.bundle.js"
+    "js": "polyfills.0d9533aa882b921402c5.bundle.js"
   }
 }
