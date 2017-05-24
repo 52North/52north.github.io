@@ -40,4 +40,7 @@
 }, {
   "name": "OX-Framework",
   "categories": ["SensorWeb"]
+}, {
+  "name": "IlwisDownloads",
+  "categories": ["Featured", "ILWIS"]
 }]
