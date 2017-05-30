@@ -5,6 +5,14 @@
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
+require('to-string-loader');
+require('sass-loader');
+require('raw-loader');
+require('json-loader');
+require('file-loader');
+require('css-loader');
+require('angular2-template-loader');
+
 /*
  * Webpack Plugins
  */

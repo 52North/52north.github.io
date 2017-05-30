@@ -5,6 +5,12 @@
 const helpers = require('./helpers');
 const path = require('path');
 
+require('source-map-loader');
+require('raw-loader');
+require('json-loader');
+require('istanbul-instrumenter-loader');
+require('css-loader');
+
 /**
  * Webpack Plugins
  */
