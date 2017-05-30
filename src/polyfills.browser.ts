@@ -33,6 +33,11 @@ import 'zone.js/dist/zone';
 // Typescript emit helpers polyfill
 import 'ts-helpers';
 
+// Hammer.js
+// We need to import this library in order for Material to work
+// Material needs this for md-tooltips
+import 'hammerjs';
+
 if ('production' === ENV) {
   // Production
 
