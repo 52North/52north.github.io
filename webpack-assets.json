@@ -1,9 +1,9 @@
 {
   "vendor": {
-    "js": "vendor.9dae62cc2bee6a1b94fa.bundle.js"
+    "js": "vendor.b7b241df88d55f603e41.bundle.js"
   },
   "main": {
-    "js": "main.ea7638a411ccf40be101.bundle.js"
+    "js": "main.180db1c030a43add3806.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.1402561781acf301e2c1.bundle.js"
