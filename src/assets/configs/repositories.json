@@ -43,4 +43,19 @@
 }, {
   "name": "Ilwis3Downloads",
   "categories": ["Featured", "ILWIS"]
+}, {
+  "name": "GEONETCast-Toolbox",
+  "categories": ["ILWIS"]
+}, {
+  "name": "ISOD-Toolbox",
+  "categories": ["ILWIS"]
+}, {
+  "name": "MESA-SADC-Toolbox",
+  "categories": ["ILWIS"]
+}, {
+  "name": "TSConvertTool",
+  "categories": ["ILWIS"]
+}, {
+  "name": "WFS-E-Toolbox",
+  "categories": ["ILWIS"]
 }]
