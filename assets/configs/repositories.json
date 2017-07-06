@@ -58,4 +58,7 @@
 }, {
   "name": "WFS-E-Toolbox",
   "categories": ["ILWIS"]
+}, {
+  "name": "GEONETCast-DataManager",
+  "categories": ["ILWIS"]
 }]
