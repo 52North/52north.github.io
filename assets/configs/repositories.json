@@ -5,7 +5,7 @@
   "name": "SES",
   "categories": ["SensorWeb"]
 }, {
-  "name": "SOS",
+  "name": "sos",
   "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "SensorWebClient",
