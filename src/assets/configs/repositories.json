@@ -8,6 +8,9 @@
   "name": "SOS",
   "categories": ["Featured", "SensorWeb"]
 }, {
+  "name": "sos-importer",
+  "categories": ["SensorWeb"]
+}, {
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
 }, {
