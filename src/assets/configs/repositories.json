@@ -61,4 +61,7 @@
 }, {
   "name": "GEONETCast-DataManager",
   "categories": ["ILWIS"]
+}, {
+  "name": "sos-importer",
+  "categories": ["SensorWeb"]
 }]
