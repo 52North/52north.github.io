@@ -51,10 +51,10 @@
   "categories": ["SensorWeb"]
 }, {
   "name": "javaPS",
-  "categories": ["Featured", "Geoprocessing"]
+  "categories": ["Featured", "GeoProcessing"]
 }, {
   "name": "wpsclient4arcgis",
-  "categories": ["Featured", "Geoprocessing"]
+  "categories": ["Featured", "GeoProcessing"]
 }, {
   "name": "faroe",
   "categories": ["Featured", "SensorWeb"]
