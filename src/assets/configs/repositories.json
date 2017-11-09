@@ -2,23 +2,14 @@
   "name": "helgoland",
   "categories": ["Featured", "SensorWeb"]
 }, {
-  "name": "SES",
-  "categories": ["SensorWeb"]
-}, {
   "name": "SOS",
   "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
 }, {
-  "name": "WPS4Aviation",
-  "categories": ["GeoProcessing"]
-}, {
   "name": "series-rest-api",
   "categories": ["SensorWeb"]
-}, {
-  "name": "WPS-Extension-Skeleton",
-  "categories": ["GeoProcessing"]
 }, {
   "name": "WPS",
   "categories": ["Featured", "GeoProcessing"]
@@ -29,17 +20,11 @@
   "name": "IlwisConnectors",
   "categories": ["ILWIS"]
 }, {
-  "name": "OpenSensorSearch",
-  "categories": ["SensorWeb"]
-}, {
   "name": "SensorPlanningService",
   "categories": ["SensorWeb"]
 }, {
   "name": "wps-js",
   "categories": ["GeoProcessing"]
-}, {
-  "name": "OX-Framework",
-  "categories": ["SensorWeb"]
 }, {
   "name": "Ilwis3Downloads",
   "categories": ["Featured", "ILWIS"]
@@ -64,4 +49,34 @@
 }, {
   "name": "sos-importer",
   "categories": ["SensorWeb"]
+}, {
+  "name": "javaPS",
+  "categories": ["Featured", "Geoprocessing"]
+}, {
+  "name": "wpsclient4arcgis",
+  "categories": ["Featured", "Geoprocessing"]
+}, {
+  "name": "faroe",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "janmayen",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "shetland",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "svalbard",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "iceland",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "series-rest-api",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "restful-timeseries-proxy",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "smle",
+  "categories": ["Featured", "SensorWeb"]
 }]
