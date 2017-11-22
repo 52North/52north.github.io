@@ -79,4 +79,7 @@
 }, {
   "name": "smle",
   "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "smartEditor",
+  "categories": ["Featured", "Metadata"]
 }]
