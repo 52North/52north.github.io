@@ -27,6 +27,10 @@ button.active:hover{
     padding: 7px 0px;
 }
 
+.site-header.fixed + div {
+  border-top: 160px solid transparent;  
+}
+
 md-content{
   display: flex;
   flex-direction: column;
