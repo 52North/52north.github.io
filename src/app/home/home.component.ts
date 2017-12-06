@@ -36,7 +36,8 @@ export class Home implements OnInit {
     textSearch(event: any) {
         let term = new RegExp(event.target.value, 'gi');
         this.repositories.forEach(entry => {
-            if (entry.name.match(term) || entry.description.match(term)) {
+            if (entry.name && entry.name.match(term)
+                || entry.description && entry.description.match(term)) {
                 entry.hidden = false;
             } else {
                 entry.hidden = true;
