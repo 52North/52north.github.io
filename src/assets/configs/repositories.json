@@ -56,19 +56,7 @@
   "name": "wpsclient4arcgis",
   "categories": ["Featured", "GeoProcessing"]
 }, {
-  "name": "faroe",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "janmayen",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "shetland",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "svalbard",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "iceland",
+  "name": "arctic-sea",
   "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "series-rest-api",
