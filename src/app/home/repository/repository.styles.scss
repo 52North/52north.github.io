@@ -1,14 +1,15 @@
-md-card {
-  height: 300px;
-
-  md-card-content {
-    position: relative;
-    height: 135px;
-
-    .buttons {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+mat-card {
+    mat-card-header {
+        height: 112px;
     }
-  }
+    mat-card-content {
+        height: 50px;
+    }
+    mat-card-actions {
+        margin-left: 0;
+        margin-right: 0;
+        button {
+            padding: 8px 12px;
+        }
+    }
 }

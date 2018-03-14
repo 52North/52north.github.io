@@ -1,36 +1,40 @@
-<md-card>
-  <md-card-title>{{repository.name}}</md-card-title>
-  <md-card-subtitle>
-    <i class="fa fa-star" aria-hidden="true"></i>
-    <span>{{repository.stargazers_count}}</span>
-    <i class="fa fa-code-fork" aria-hidden="true"></i>
-    <span>{{repository.forks_count}}</span>
-    <i class="fa fa-eye" aria-hidden="true"></i>
-    <span>{{repository.watchers_count}}</span>
-    <span>
-      |
-    </span>
-    <i class="fa fa-clock-o" aria-hidden="true"></i>
-    <span>{{repository.pushed_at | date}}</span>
-    <div *ngIf="repository.license">{{repository.license.name}}</div>
-  </md-card-subtitle>
-  <md-card-subtitle>
-    <span>{{repository.categories}}</span>
-  </md-card-subtitle>
-  <!--<md-card-subtitle>
-    <span>{{repository.language}}</span>
-    <span>
-      |
-    </span>
-    <span>{{repository.size}}Kb</span>
-</md-card-subtitle>-->
-  <md-card-content>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h3>{{repository.name}}</h3>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <span>{{repository.stargazers_count}}</span>
+      <i class="fa fa-code-fork" aria-hidden="true"></i>
+      <span>{{repository.forks_count}}</span>
+      <i class="fa fa-eye" aria-hidden="true"></i>
+      <span>{{repository.watchers_count}}</span>
+      <span>
+        |
+      </span>
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <span>{{repository.pushed_at | date}}</span>
+      <div *ngIf="repository.license">{{repository.license.name}}</div>
+    </mat-card-subtitle>
+    <mat-card-subtitle>
+      <span>{{repository.categories}}</span>
+    </mat-card-subtitle>
+    <!-- <mat-card-subtitle>
+      <span>{{repository.language}}</span>
+      <span>
+        |
+      </span>
+      <span>{{repository.size}}Kb</span>
+    </mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
     <div>
       {{repository.description}}
     </div>
-    <div class="buttons">
-      <button md-raised-button (click)="toRepository()">Repository</button>
-      <button *ngIf="release && release.tag_name" md-raised-button (click)="toRelease()">latest release: {{release.tag_name}}</button>
-    </div>
-  </md-card-content>
-</md-card>
+  </mat-card-content>
+  <mat-card-actions align="start">
+    <button (click)="toRepository()">Repository</button>
+    <button *ngIf="release && release.tag_name" (click)="toRelease()">latest release: {{release.tag_name}}</button>
+  </mat-card-actions>
+</mat-card>
