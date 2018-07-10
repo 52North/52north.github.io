@@ -3,14 +3,14 @@
     "js": "vendor.e13b02cacf8cb3a700f7.bundle.js"
   },
   "main": {
-    "js": "main.3ca634d96c0f46e916ec.bundle.js"
+    "js": "main.bbfa63203cebabe23a8a.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d50f30e645cd9eaa9434.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
@@ -34,7 +34,7 @@
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/restful-timeseries-proxy.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
@@ -70,9 +70,9 @@
       "assets/css/style.css"
     ],
     "woff2": "af7ae505a9eed503f8b8e6982036873e.woff2",
+    "png": "assets/img/logo-main.png",
     "xml": "assets/icon/browserconfig.xml",
     "ico": "assets/icon/favicon-52north.ico",
-    "png": "assets/img/logo-main.png",
     "js": [
       "assets/js/global.js",
       "assets/js/jquery.localScroll.min.js",
