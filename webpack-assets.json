@@ -3,7 +3,7 @@
     "js": "vendor.e13b02cacf8cb3a700f7.bundle.js"
   },
   "main": {
-    "js": "main.2d741cdb0d528e09d408.bundle.js"
+    "js": "main.55bc3c5ecd9504499b0f.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d50f30e645cd9eaa9434.bundle.js"
@@ -19,8 +19,8 @@
       "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
-      "assets/data/IlwisCore.json",
       "assets/data/IlwisConnectors.json",
+      "assets/data/IlwisCore.json",
       "assets/data/ISOD-Toolbox.json",
       "assets/data/javaPS.json",
       "assets/data/MESA-SADC-Toolbox.json",
