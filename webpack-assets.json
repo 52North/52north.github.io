@@ -3,7 +3,7 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.6dfd549f305ef894a099.bundle.js"
+    "js": "main.59063dcb30cd9853c9d6.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d50f30e645cd9eaa9434.bundle.js"
@@ -14,8 +14,8 @@
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
-      "assets/data/GEONETCast-DataManager.json",
       "assets/data/arctic-sea.json",
+      "assets/data/GEONETCast-DataManager.json",
       "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
