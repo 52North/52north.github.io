@@ -3,18 +3,17 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.50c97fed0409886e9a63.bundle.js"
+    "js": "main.03a9b3b1bc9dcc95e98f.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.9fb2a2ce01a4b08c0aee.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
-      "assets/data/arctic-sea.json",
       "assets/data/GEONETCast-DataManager.json",
       "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
@@ -34,13 +33,14 @@
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/restful-timeseries-proxy.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
       "assets/data/release/sos-importer.json",
       "assets/data/release/SOS.json",
+      "assets/data/arctic-sea.json",
       "assets/data/release/TSConvertTool.json",
       "assets/data/release/WFS-E-Toolbox.json",
       "assets/data/release/wps-js.json",
