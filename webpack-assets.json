@@ -3,7 +3,7 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.5d2eeb50933274fa95b3.bundle.js"
+    "js": "main.4cc5e2497f7dcb7bf7e6.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.b64c03351210ac8971ed.bundle.js"
@@ -35,7 +35,6 @@
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/SensorPlanningService.json",
-      "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
@@ -44,6 +43,7 @@
       "assets/data/release/TSConvertTool.json",
       "assets/data/release/WFS-E-Toolbox.json",
       "assets/data/release/wps-js.json",
+      "assets/data/release/SensorWebClient.json",
       "assets/data/release/WPS.json",
       "assets/data/release/wpsclient4arcgis.json",
       "assets/data/restful-timeseries-proxy.json",
