@@ -5,6 +5,9 @@
   "name": "SOS",
   "categories": ["Featured", "SensorWeb"]
 }, {
+  "name": "sos4R",
+  "categories": ["Sensorweb"]
+}, {
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
 }, {
