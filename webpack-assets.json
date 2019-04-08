@@ -3,14 +3,14 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.b4f9eb15f54030bbf346.bundle.js"
+    "js": "main.b16d14fbc598ef08cb0d.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.dc725f783c5ee27b1831.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/SensorWebClient.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
@@ -26,6 +26,7 @@
       "assets/data/MESA-SADC-Toolbox.json",
       "assets/data/release/arctic-sea.json",
       "assets/data/release/GEONETCast-DataManager.json",
+      "assets/data/release/GEONETCast-Toolbox.json",
       "assets/data/release/helgoland.json",
       "assets/data/release/Ilwis3Downloads.json",
       "assets/data/release/IlwisConnectors.json",
@@ -34,7 +35,7 @@
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
@@ -59,8 +60,7 @@
       "assets/data/WFS-E-Toolbox.json",
       "assets/data/wps-js.json",
       "assets/data/WPS.json",
-      "assets/data/wpsclient4arcgis.json",
-      "assets/data/release/GEONETCast-Toolbox.json"
+      "assets/data/wpsclient4arcgis.json"
     ],
     "eot": "674f50d287a8c48dc19ba404d20fe713.eot",
     "woff": "fee66e712a8a08eef5805a46892932ad.woff",
