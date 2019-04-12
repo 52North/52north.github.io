@@ -3,7 +3,7 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.f83d74f0d7e2d31697a7.bundle.js"
+    "js": "main.6c42ad89c0a8901c4ee6.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.dc725f783c5ee27b1831.bundle.js"
@@ -19,7 +19,6 @@
       "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
-      "assets/data/IlwisConnectors.json",
       "assets/data/IlwisCore.json",
       "assets/data/ISOD-Toolbox.json",
       "assets/data/javaPS.json",
@@ -35,6 +34,7 @@
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/IlwisConnectors.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
@@ -47,11 +47,11 @@
       "assets/data/release/wps-js.json",
       "assets/data/release/WPS.json",
       "assets/data/release/wpsclient4arcgis.json",
-      "assets/data/restful-timeseries-proxy.json",
       "assets/data/SensorPlanningService.json",
       "assets/data/SensorWebClient.json",
       "assets/data/series-rest-api.json",
       "assets/data/smartEditor.json",
+      "assets/data/restful-timeseries-proxy.json",
       "assets/data/smle.json",
       "assets/data/sos-importer.json",
       "assets/data/SOS.json",
