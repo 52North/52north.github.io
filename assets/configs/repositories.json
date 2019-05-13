@@ -1,45 +1,60 @@
 [{
+  "name": "arctic-sea",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "GEONETCast-DataManager",
+  "categories": ["ILWIS"]
+}, {
+  "name": "GEONETCast-Toolbox",
+  "categories": ["ILWIS"]
+}, {
   "name": "helgoland",
   "categories": ["Featured", "SensorWeb"]
 }, {
-  "name": "SOS",
+  "name": "Ilwis3Downloads",
+  "categories": ["Featured", "ILWIS"]
+}, {
+  "name": "IlwisConnectors",
+  "categories": ["ILWIS"]
+}, {
+  "name": "IlwisCore",
+  "categories": ["Featured", "ILWIS"]
+}, {
+  "name": "ISOD-Toolbox",
+  "categories": ["ILWIS"]
+}, {
+  "name": "javaPS",
+  "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "MESA-SADC-Toolbox",
+  "categories": ["ILWIS"]
+}, {
+  "name": "restful-timeseries-proxy",
   "categories": ["Featured", "SensorWeb"]
 }, {
-  "name": "sos4R",
+  "name": "SensorPlanningService",
   "categories": ["SensorWeb"]
 }, {
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
 }, {
   "name": "series-rest-api",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "smartEditor",
+  "categories": ["Featured", "Metadata"]
+}, {
+  "name": "smle",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "SOS",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "sos-importer",
   "categories": ["SensorWeb"]
 }, {
-  "name": "WPS",
-  "categories": ["Featured", "GeoProcessing"]
-}, {
-  "name": "IlwisCore",
-  "categories": ["Featured", "ILWIS"]
-}, {
-  "name": "IlwisConnectors",
-  "categories": ["ILWIS"]
-}, {
-  "name": "SensorPlanningService",
+  "name": "sos4R",
   "categories": ["SensorWeb"]
-}, {
-  "name": "wps-js",
-  "categories": ["GeoProcessing"]
-}, {
-  "name": "Ilwis3Downloads",
-  "categories": ["Featured", "ILWIS"]
-}, {
-  "name": "GEONETCast-Toolbox",
-  "categories": ["ILWIS"]
-}, {
-  "name": "ISOD-Toolbox",
-  "categories": ["ILWIS"]
-}, {
-  "name": "MESA-SADC-Toolbox",
-  "categories": ["ILWIS"]
 }, {
   "name": "TSConvertTool",
   "categories": ["ILWIS"]
@@ -47,30 +62,12 @@
   "name": "WFS-E-Toolbox",
   "categories": ["ILWIS"]
 }, {
-  "name": "GEONETCast-DataManager",
-  "categories": ["ILWIS"]
-}, {
-  "name": "sos-importer",
-  "categories": ["SensorWeb"]
-}, {
-  "name": "javaPS",
+  "name": "WPS",
   "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "wps-js",
+  "categories": ["GeoProcessing"]
 }, {
   "name": "wpsclient4arcgis",
   "categories": ["Featured", "GeoProcessing"]
-}, {
-  "name": "arctic-sea",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "series-rest-api",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "restful-timeseries-proxy",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "smle",
-  "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "smartEditor",
-  "categories": ["Featured", "Metadata"]
 }]
