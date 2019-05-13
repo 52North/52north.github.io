@@ -11,9 +11,6 @@
   "name": "SensorWebClient",
   "categories": ["SensorWeb"]
 }, {
-  "name": "series-rest-api",
-  "categories": ["SensorWeb"]
-}, {
   "name": "WPS",
   "categories": ["Featured", "GeoProcessing"]
 }, {
