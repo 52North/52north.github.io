@@ -3,7 +3,7 @@
     "js": "vendor.4fad58c79a857957264c.bundle.js"
   },
   "main": {
-    "js": "main.d8d16ecdc9600f710daf.bundle.js"
+    "js": "main.76ac4b23f95b262cf8fb.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.e3c7904d68b8aabf4d88.bundle.js"
@@ -55,12 +55,12 @@
       "assets/data/smle.json",
       "assets/data/sos-importer.json",
       "assets/data/SOS.json",
-      "assets/data/sos4R.json",
       "assets/data/TSConvertTool.json",
       "assets/data/WFS-E-Toolbox.json",
       "assets/data/wps-js.json",
       "assets/data/WPS.json",
-      "assets/data/wpsclient4arcgis.json"
+      "assets/data/wpsclient4arcgis.json",
+      "assets/data/sos4R.json"
     ],
     "eot": "674f50d287a8c48dc19ba404d20fe713.eot",
     "woff": "fee66e712a8a08eef5805a46892932ad.woff",
