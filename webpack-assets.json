@@ -1,16 +1,16 @@
 {
   "vendor": {
-    "js": "vendor.4fad58c79a857957264c.bundle.js"
+    "js": "vendor.8692111c503a1bdf85bf.bundle.js"
   },
   "main": {
-    "js": "main.b6d5db8865f76d212cd4.bundle.js"
+    "js": "main.7adeae3615e60427e9f8.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.e3c7904d68b8aabf4d88.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/SensorWebClient.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
@@ -34,8 +34,7 @@
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
-      "assets/data/release/restful-timeseries-proxy.json",
-      "assets/data/release/SensorWebClient.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
@@ -51,6 +50,7 @@
       "assets/data/SensorPlanningService.json",
       "assets/data/SensorWebClient.json",
       "assets/data/series-rest-api.json",
+      "assets/data/release/restful-timeseries-proxy.json",
       "assets/data/smartEditor.json",
       "assets/data/smle.json",
       "assets/data/sos-importer.json",
