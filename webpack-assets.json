@@ -3,7 +3,7 @@
     "js": "vendor.8692111c503a1bdf85bf.bundle.js"
   },
   "main": {
-    "js": "main.2d8590180cfe93756b48.bundle.js"
+    "js": "main.7cf1e0a5223d2883e17c.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.e3c7904d68b8aabf4d88.bundle.js"
@@ -28,10 +28,10 @@
       "assets/data/release/GEONETCast-DataManager.json",
       "assets/data/release/GEONETCast-Toolbox.json",
       "assets/data/release/helgoland.json",
+      "assets/data/release/Ilwis3Downloads.json",
       "assets/data/release/IlwisConnectors.json",
       "assets/data/release/IlwisCore.json",
       "assets/data/release/ISOD-Toolbox.json",
-      "assets/data/release/Ilwis3Downloads.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
