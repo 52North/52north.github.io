@@ -3,7 +3,7 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.d1c70be15a14b66bfe8b.bundle.js"
+    "js": "main.f8fc15b0d9a6302e4ce3.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.5b02ad92ad42b9500f98.bundle.js"
@@ -17,14 +17,14 @@
       "assets/data/arctic-sea.json",
       "assets/data/GEONETCast-DataManager.json",
       "assets/data/GEONETCast-Toolbox.json",
-      "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
+      "assets/data/helgoland.json",
       "assets/data/IlwisConnectors.json",
       "assets/data/IlwisCore.json",
       "assets/data/ISOD-Toolbox.json",
       "assets/data/javaPS.json",
-      "assets/data/MESA-SADC-Toolbox.json",
       "assets/data/release/arctic-sea.json",
+      "assets/data/MESA-SADC-Toolbox.json",
       "assets/data/release/GEONETCast-DataManager.json",
       "assets/data/release/GEONETCast-Toolbox.json",
       "assets/data/release/helgoland.json",
@@ -33,8 +33,8 @@
       "assets/data/release/IlwisCore.json",
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
-      "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
@@ -42,13 +42,13 @@
       "assets/data/release/sos-importer.json",
       "assets/data/release/SOS.json",
       "assets/data/release/sos4R.json",
-      "assets/data/release/TSConvertTool.json",
       "assets/data/release/WFS-E-Toolbox.json",
       "assets/data/release/wps-js.json",
+      "assets/data/release/TSConvertTool.json",
       "assets/data/release/WPS.json",
       "assets/data/release/wpsclient4arcgis.json",
-      "assets/data/restful-timeseries-proxy.json",
       "assets/data/SensorPlanningService.json",
+      "assets/data/restful-timeseries-proxy.json",
       "assets/data/SensorWebClient.json",
       "assets/data/series-rest-api.json",
       "assets/data/smartEditor.json",
@@ -72,15 +72,15 @@
       "assets/css/style.css"
     ],
     "woff2": "af7ae505a9eed503f8b8e6982036873e.woff2",
-    "xml": "assets/icon/browserconfig.xml",
     "ico": "assets/icon/favicon-52north.ico",
-    "png": "assets/img/logo-main.png",
+    "xml": "assets/icon/browserconfig.xml",
     "js": [
       "assets/js/global.js",
       "assets/js/jquery.localScroll.min.js",
       "assets/service-worker.js"
     ],
     "txt": "assets/robots.txt",
+    "png": "assets/img/logo-main.png",
     "html": "index.html"
   }
 }
