@@ -3,20 +3,19 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.f1407af7a1179c3d05a9.bundle.js"
+    "js": "main.cb3075560f2511866422.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.5b02ad92ad42b9500f98.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/SensorWebClient.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
       "assets/data/arctic-sea.json",
       "assets/data/GEONETCast-DataManager.json",
-      "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
       "assets/data/IlwisConnectors.json",
@@ -35,11 +34,12 @@
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
-      "assets/data/release/SensorWebClient.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
       "assets/data/release/sos-importer.json",
+      "assets/data/GEONETCast-Toolbox.json",
       "assets/data/release/SOS.json",
       "assets/data/release/sos4R.json",
       "assets/data/release/TSConvertTool.json",
@@ -66,11 +66,11 @@
     "woff": "fee66e712a8a08eef5805a46892932ad.woff",
     "ttf": "b06871f281fee6b241d60582ae9369b9.ttf",
     "svg": "912ec66d7572ff821749319396470bde.svg",
+    "": "assets/css/.gitkeep",
     "css": [
       "assets/css/loading.css",
       "assets/css/style.css"
     ],
-    "": "assets/css/.gitkeep",
     "woff2": "af7ae505a9eed503f8b8e6982036873e.woff2",
     "xml": "assets/icon/browserconfig.xml",
     "ico": "assets/icon/favicon-52north.ico",
