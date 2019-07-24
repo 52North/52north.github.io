@@ -3,19 +3,18 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.bd0678a6ec06bf67b09f.bundle.js"
+    "js": "main.c42054337ac4cb9c927b.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.5b02ad92ad42b9500f98.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/SensorWebClient.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
       "assets/data/arctic-sea.json",
-      "assets/data/GEONETCast-DataManager.json",
       "assets/data/GEONETCast-Toolbox.json",
       "assets/data/helgoland.json",
       "assets/data/Ilwis3Downloads.json",
@@ -35,7 +34,8 @@
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
       "assets/data/release/restful-timeseries-proxy.json",
-      "assets/data/release/SensorWebClient.json",
+      "assets/data/release/SensorPlanningService.json",
+      "assets/data/GEONETCast-DataManager.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
