@@ -3,7 +3,7 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.817b3c621eab68335e48.bundle.js"
+    "js": "main.9ea23f4574ab66201b46.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.5b02ad92ad42b9500f98.bundle.js"
@@ -76,8 +76,8 @@
     "ico": "assets/icon/favicon-52north.ico",
     "png": "assets/img/logo-main.png",
     "js": [
-      "assets/js/jquery.localScroll.min.js",
       "assets/js/global.js",
+      "assets/js/jquery.localScroll.min.js",
       "assets/service-worker.js"
     ],
     "txt": "assets/robots.txt",
