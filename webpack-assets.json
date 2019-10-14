@@ -3,7 +3,7 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.847916f12f9f9254009e.bundle.js"
+    "js": "main.231d60e5da420432e375.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.5b02ad92ad42b9500f98.bundle.js"
@@ -66,11 +66,11 @@
     "woff": "fee66e712a8a08eef5805a46892932ad.woff",
     "ttf": "b06871f281fee6b241d60582ae9369b9.ttf",
     "svg": "912ec66d7572ff821749319396470bde.svg",
+    "": "assets/css/.gitkeep",
     "css": [
       "assets/css/loading.css",
       "assets/css/style.css"
     ],
-    "": "assets/css/.gitkeep",
     "woff2": "af7ae505a9eed503f8b8e6982036873e.woff2",
     "xml": "assets/icon/browserconfig.xml",
     "ico": "assets/icon/favicon-52north.ico",
