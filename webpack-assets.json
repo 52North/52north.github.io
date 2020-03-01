@@ -3,7 +3,7 @@
     "js": "vendor.a14dce5c2059a3dc3286.bundle.js"
   },
   "main": {
-    "js": "main.fd5638a8bcd050cad5b3.bundle.js"
+    "js": "main.f1fc8fc38c083529e94e.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d0f55d388fb28c99a0d1.bundle.js"
@@ -47,7 +47,6 @@
       "assets/data/release/wps-js.json",
       "assets/data/release/WPS.json",
       "assets/data/release/wpsclient4arcgis.json",
-      "assets/data/restful-timeseries-proxy.json",
       "assets/data/SensorPlanningService.json",
       "assets/data/SensorWebClient.json",
       "assets/data/series-rest-api.json",
@@ -60,6 +59,7 @@
       "assets/data/WFS-E-Toolbox.json",
       "assets/data/wps-js.json",
       "assets/data/WPS.json",
+      "assets/data/restful-timeseries-proxy.json",
       "assets/data/wpsclient4arcgis.json"
     ],
     "eot": "674f50d287a8c48dc19ba404d20fe713.eot",
