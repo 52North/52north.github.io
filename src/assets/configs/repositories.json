@@ -11,6 +11,9 @@
   "name": "helgoland",
   "categories": ["Featured", "SensorWeb"]
 }, {
+  "name": "helgoland-toolbox",
+  "categories": ["Featured", "SensorWeb"]
+}, {
   "name": "Ilwis3Downloads",
   "categories": ["Featured", "ILWIS"]
 }, {
