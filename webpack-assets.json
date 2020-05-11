@@ -3,7 +3,7 @@
     "js": "vendor.44433c2d8d012795cdf9.bundle.js"
   },
   "main": {
-    "js": "main.ae12f86754bed7742ade.bundle.js"
+    "js": "main.929db121bfcc5cef6595.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d0f55d388fb28c99a0d1.bundle.js"
@@ -47,8 +47,8 @@
       "assets/data/release/TSConvertTool.json",
       "assets/data/release/WFS-E-Toolbox.json",
       "assets/data/release/wps-js.json",
-      "assets/data/release/wpsclient4arcgis.json",
       "assets/data/release/WPS.json",
+      "assets/data/release/wpsclient4arcgis.json",
       "assets/data/restful-timeseries-proxy.json",
       "assets/data/SensorPlanningService.json",
       "assets/data/SensorWebClient.json",
