@@ -73,4 +73,7 @@
 }, {
   "name": "wpsclient4arcgis",
   "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "wps-ng-client",
+  "categories": ["Featured", "GeoProcessing"]
 }]
