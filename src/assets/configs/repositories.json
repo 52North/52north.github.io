@@ -45,7 +45,7 @@
   "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "smartEditor",
-  "categories": ["Featured", "Metadata"]
+  "categories": ["Metadata"]
 }, {
   "name": "smle",
   "categories": ["Featured", "SensorWeb"]
@@ -57,7 +57,7 @@
   "categories": ["SensorWeb"]
 }, {
   "name": "sos4R",
-  "categories": ["SensorWeb"]
+  "categories": ["Featured", "SensorWeb"]
 }, {
   "name": "TSConvertTool",
   "categories": ["ILWIS"]
@@ -69,7 +69,7 @@
   "categories": ["Featured", "GeoProcessing"]
 }, {
   "name": "wps-js",
-  "categories": ["GeoProcessing"]
+  "categories": ["Featured", "GeoProcessing"]
 }, {
   "name": "wpsclient4arcgis",
   "categories": ["Featured", "GeoProcessing"]
