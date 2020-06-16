@@ -3,14 +3,14 @@
     "js": "vendor.9f9b4915eeaca8eef70d.bundle.js"
   },
   "main": {
-    "js": "main.73a7024f30b6e7b33c23.bundle.js"
+    "js": "main.7d30b630dbd2be52f8d7.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.d0f55d388fb28c99a0d1.bundle.js"
   },
   "": {
     "json": [
-      "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/configs/categories.json",
       "assets/configs/repositories.json",
       "assets/metadata.json",
@@ -36,7 +36,7 @@
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
-      "assets/data/release/SensorPlanningService.json",
+      "assets/data/release/restful-timeseries-proxy.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
@@ -47,6 +47,7 @@
       "assets/data/release/TSConvertTool.json",
       "assets/data/release/WFS-E-Toolbox.json",
       "assets/data/release/wps-js.json",
+      "assets/data/release/wps-ng-client.json",
       "assets/data/release/WPS.json",
       "assets/data/release/wpsclient4arcgis.json",
       "assets/data/restful-timeseries-proxy.json",
@@ -61,6 +62,7 @@
       "assets/data/TSConvertTool.json",
       "assets/data/WFS-E-Toolbox.json",
       "assets/data/wps-js.json",
+      "assets/data/wps-ng-client.json",
       "assets/data/WPS.json",
       "assets/data/wpsclient4arcgis.json"
     ],
