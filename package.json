@@ -131,7 +131,7 @@
     "typescript": "^2.7.2",
     "v8-lazy-parse-webpack-plugin": "0.3.0",
     "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1",
+    "webpack-dev-server": "^3.1.11",
     "webpack-md5-hash": "0.0.6",
     "webpack-merge": "^4.2.1"
   },
