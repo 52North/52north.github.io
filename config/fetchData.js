@@ -26,7 +26,7 @@ function createMetadata() {
   var metadata = {
     timestamp: new Date
   };
-  fs.writeFile(assetsFolder + 'metadata.json', JSON.stringify(metadata));
+  fs.writeFileSync(assetsFolder + 'metadata.json', JSON.stringify(metadata));
 }
 
 function createAuthToken() {
@@ -54,7 +54,7 @@ function fetchRepo(name) {
   var options = createRequestOptions('https://api.github.com/repos/52North/' + name);
   request(options, function(error, response, body) {
     console.log('create data for repository: ' + name);
-    fs.writeFile(datafolder + name + '.json', body);
+    fs.writeFileSync(datafolder + name + '.json', body);
   });
 }
 
@@ -62,7 +62,7 @@ function fetchLatestRelease(name) {
   var options = createRequestOptions('https://api.github.com/repos/52North/' + name + '/releases/latest');
   request(options, function(error, response, body) {
     console.warn('create latest release for repository: ' + name);
-    fs.writeFile(releasefolder + name + '.json', body);
+    fs.writeFileSync(releasefolder + name + '.json', body);
   });
 }
 
