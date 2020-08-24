@@ -3,7 +3,7 @@
     "js": "vendor.66991ed858778055792f.bundle.js"
   },
   "main": {
-    "js": "main.6c2657d2b510a8ed2ec8.bundle.js"
+    "js": "main.9e9747daf05c7f985377.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.f7fbf57cec80329726ba.bundle.js"
@@ -40,8 +40,8 @@
       "assets/data/release/ISOD-Toolbox.json",
       "assets/data/release/javaPS.json",
       "assets/data/release/MESA-SADC-Toolbox.json",
-      "assets/data/release/SensorPlanningService.json",
       "assets/data/release/restful-timeseries-proxy.json",
+      "assets/data/release/SensorPlanningService.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
       "assets/data/release/smartEditor.json",
