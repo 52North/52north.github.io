@@ -3,7 +3,7 @@
     "js": "vendor.66991ed858778055792f.bundle.js"
   },
   "main": {
-    "js": "main.07984f753e5f31d0623c.bundle.js"
+    "js": "main.ce18966a706a1ae9be3a.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.f7fbf57cec80329726ba.bundle.js"
@@ -44,9 +44,9 @@
       "assets/data/release/SensorPlanningService.json",
       "assets/data/release/SensorWebClient.json",
       "assets/data/release/series-rest-api.json",
-      "assets/data/release/smartEditor.json",
       "assets/data/release/smle.json",
       "assets/data/release/sos-importer.json",
+      "assets/data/release/smartEditor.json",
       "assets/data/release/SOS.json",
       "assets/data/release/sos4R.json",
       "assets/data/release/TSConvertTool.json",
