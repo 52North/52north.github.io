@@ -3,7 +3,7 @@
     "js": "vendor.66991ed858778055792f.bundle.js"
   },
   "main": {
-    "js": "main.37ab048c5f42db7706bd.bundle.js"
+    "js": "main.9acc5606ea225fe1fd02.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.f7fbf57cec80329726ba.bundle.js"
@@ -76,9 +76,9 @@
       "assets/css/loading.css",
       "assets/css/style.css"
     ],
+    "xml": "assets/icon/browserconfig.xml",
     "ico": "assets/icon/favicon-52north.ico",
     "png": "assets/img/logo-main.png",
-    "xml": "assets/icon/browserconfig.xml",
     "js": [
       "assets/js/global.js",
       "assets/js/jquery.localScroll.min.js",
