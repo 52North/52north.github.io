@@ -44,9 +44,6 @@
   "name": "series-rest-api",
   "categories": ["Featured", "SensorWeb"]
 }, {
-  "name": "smartEditor",
-  "categories": ["Metadata"]
-}, {
   "name": "smle",
   "categories": ["Featured", "SensorWeb"]
 }, {
