@@ -1,93 +1,40 @@
-import { NgModule, ApplicationRef } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { MatCardModule } from '@angular/material';
+import { Repositories } from './home/repository/repository.service';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
-/*
- * Platform and Environment providers/directives/pipes
- */
+import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
-// App is our top level component
-import { App } from './app.component';
-import { AppState, InteralStateType } from './app.service';
-import { Home } from './home';
-import { RepositoryComponent } from './home/repository/repository.component';
-import { Categories } from './categories/categories.component';
-import { NoContent } from './no-content';
+import { AppState } from './app.service';
+import { CategoriesComponent } from './categories/categories.component';
+import { RepositoryComponent } from './home/repository';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
-// Application wide providers
-const APP_PROVIDERS = [
-    AppState
-];
-
-type StoreType = {
-    state: InteralStateType,
-    restoreInputValues: () => void,
-    disposeOldHosts: () => void
-};
-
-/**
- * `AppModule` is the main entry point into Angular2's bootstraping process
- */
 @NgModule({
-    bootstrap: [App],
-    declarations: [
-        App,
-        Home,
-        NoContent,
-        RepositoryComponent,
-        Categories
-    ],
-    imports: [ // import Angular's modules
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        MatCardModule,
-        RouterModule.forRoot(ROUTES, { useHash: true })
-    ],
-    providers: [ // expose our Services and Providers into Angular's dependency injection
-        APP_PROVIDERS
-    ]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    RepositoryComponent,
+    CategoriesComponent
+  ],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    MatCardModule,
+    BrowserAnimationsModule
+  ],
+  providers: [
+    AppState,
+    Repositories
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule {
-    constructor(public appRef: ApplicationRef, public appState: AppState) { }
-
-    hmrOnInit(store: StoreType) {
-        if (!store || !store.state) return;
-        console.log('HMR store', JSON.stringify(store, null, 2));
-        // set state
-        this.appState._state = store.state;
-        // set input values
-        if ('restoreInputValues' in store) {
-            let restoreInputValues = store.restoreInputValues;
-            setTimeout(restoreInputValues);
-        }
-
-        this.appRef.tick();
-        delete store.state;
-        delete store.restoreInputValues;
-    }
-
-    hmrOnDestroy(store: StoreType) {
-        const cmpLocation = this.appRef.components.map(cmp => cmp.location.nativeElement);
-        // save state
-        const state = this.appState._state;
-        store.state = state;
-        // recreate root elements
-        store.disposeOldHosts = createNewHosts(cmpLocation);
-        // save input values
-        store.restoreInputValues = createInputTransfer();
-        // remove styles
-        removeNgStyles();
-    }
-
-    hmrAfterDestroy(store: StoreType) {
-        // display new elements
-        store.disposeOldHosts();
-        delete store.disposeOldHosts;
-    }
-
-}
+export class AppModule { }

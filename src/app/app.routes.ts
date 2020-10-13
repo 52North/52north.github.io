@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { Home } from './home';
-import { NoContent } from './no-content';
+import { HomeComponent } from './home';
+import { NoContentComponent } from './no-content';
 
 export const ROUTES: Routes = [
-    { path: '', component: Home },
-    { path: 'home', component: Home },
-    { path: '**', component: NoContent },
+    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: '**', component: NoContentComponent },
 ];

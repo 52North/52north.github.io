@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+
+import metadataJson from '../assets/metadata.json';
 
 export type InteralStateType = {
     [key: string]: any
@@ -7,35 +8,35 @@ export type InteralStateType = {
 
 @Injectable()
 export class AppState {
-    _state: InteralStateType = {};
 
-    private metadata = require('assets/metadata.json');
+    // tslint:disable-next-line: variable-name
+    private _state: InteralStateType = {};
 
-    constructor(private http: Http) {
-        this.set('lastUpdate', this.metadata.timestamp);
+    constructor() {
+        this.set('lastUpdate', metadataJson.timestamp);
     }
 
     // already return a clone of the current state
-    get state() {
-        return this._state = this._clone(this._state);
+    get state(): InteralStateType {
+        return this._state = this.clone(this._state);
     }
     // never allow mutation
     set state(value) {
         throw new Error('do not mutate the `.state` directly');
     }
 
-    get(prop?: any) {
+    get(prop?: any): boolean {
         // use our state getter for the clone
         const state = this.state;
         return state.hasOwnProperty(prop) ? state[prop] : state;
     }
 
-    set(prop: string, value: any) {
+    set(prop: string, value: any): void {
         // internally mutate our state
-        return this._state[prop] = value;
+        this._state[prop] = value;
     }
 
-    private _clone(object: InteralStateType) {
+    private clone(object: InteralStateType): InteralStateType {
         // simple object clone
         return JSON.parse(JSON.stringify(object));
     }

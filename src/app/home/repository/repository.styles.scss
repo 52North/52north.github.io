@@ -2,12 +2,23 @@ mat-card {
     mat-card-header {
         height: 112px;
     }
+
+    mat-card-subtitle {
+
+        .fa,
+        .fas {
+            padding: 0px 5px;
+        }
+    }
+
     mat-card-content {
         height: 50px;
     }
+
     mat-card-actions {
         margin-left: 0;
         margin-right: 0;
+
         button {
             padding: 8px 12px;
         }

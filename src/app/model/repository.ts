@@ -11,4 +11,7 @@ export interface Repository {
     language: string;
     hidden: boolean;
     categories: Array<string>;
+    license: {
+        name: string;
+    };
 }

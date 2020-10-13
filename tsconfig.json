@@ -1,43 +1,22 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "noEmit": true,
-    "noEmitHelpers": true,
-    "strictNullChecks": false,
-    "baseUrl": "./src",
-    "paths": {},
-    "lib": [
-      "dom",
-      "es6"
-    ],
-    "types": [
-      "hammerjs",
-      "jasmine",
-      "node",
-      "selenium-webdriver",
-      "source-map",
-      "uglify-js",
-      "webpack"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  },
   "compileOnSave": false,
-  "buildOnSave": false,
-  "atom": {
-    "rewriteTsconfig": false,
-    "formatOnSave": true
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
   }
 }

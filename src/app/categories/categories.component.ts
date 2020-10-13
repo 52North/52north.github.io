@@ -1,23 +1,25 @@
 import { Component } from '@angular/core';
+
+import CategoriesJson from '../../assets/configs/categories.json';
 import { AppState } from '../app.service';
 
 @Component({
-    selector: 'categories',
+    selector: 'app-categories',
     templateUrl: './categories.template.html'
 })
-export class Categories {
+export class CategoriesComponent {
 
-    public categories: Array<string> = require('assets/configs/categories.json');
+    private defaultCategory = 'Featured';
 
-    private defaultCategory: String = 'Featured';
+    public categories = CategoriesJson;
 
     constructor(
-        private appState: AppState
+        public appState: AppState
     ) {
         this.appState.set('selectedCategory', this.defaultCategory);
     }
 
-    showCategory(category: string) {
-        this.appState.set('selectedCategory', category);
+    showCategory(category: string): void {
+        this.appState.set('selectedCategory', CategoriesJson);
     }
 }

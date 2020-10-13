@@ -8,27 +8,27 @@
       <span>Sort by:</span>
       <li class="menu-item" [class.current-menu-item]="sorting === 'alphabet'">
         <a (click)="sortByAlphabet()">
-          <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+          <i class="fas fa-sort-alpha-down"></i>
         </a>
       </li>
       <li class="menu-item" [class.current-menu-item]="sorting === 'stars'">
         <a (click)="sortByStars()">
-          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star"></i>
         </a>
       </li>
       <li class="menu-item" [class.current-menu-item]="sorting === 'forks'">
         <a (click)="sortByForks()">
-          <i class="fa fa-code-fork" aria-hidden="true"></i>
+          <i class="fas fa-code-branch"></i>
         </a>
       </li>
       <li class="menu-item" [class.current-menu-item]="sorting === 'watches'">
         <a (click)="sortByWatches()">
-          <i class="fa fa-eye" aria-hidden="true"></i>
+          <i class="fa fa-eye"></i>
         </a>
       </li>
       <li class="menu-item" [class.current-menu-item]="sorting === 'lastUpdates'">
         <a (click)="sortByLastUpdate()">
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <i class="far fa-clock"></i>
         </a>
       </li>
     </ul>
@@ -39,7 +39,7 @@
   <div *ngFor="let repo of repositories">
     <div *ngIf="!repo.hidden">
       <div class="col-xs-12 col-sm-6 col-lg-4 grid-example" *ngIf="repo.categories.indexOf(appState.state.selectedCategory) > -1 || appState.state.selectedCategory === 'all'">
-        <repository [repository]="repo"></repository>
+        <app-repository [repository]="repo"></app-repository>
       </div>
     </div>
   </div>

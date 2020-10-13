@@ -1,23 +1,24 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { Repository } from '../../model';
 import { Repositories } from './repository.service';
 
 @Component({
-    selector: 'repository',
-    styles: [require('./repository.styles.scss')],
-    template: require('./repository.component.html')
+    selector: 'app-repository',
+    styleUrls: ['./repository.styles.scss'],
+    templateUrl: './repository.component.html'
 })
 export class RepositoryComponent implements OnInit {
-    @Input()
-    repository: Repository;
 
-    protected release: any;
+    @Input() public repository: Repository;
+
+    public release: any;
 
     constructor(
         public repoService: Repositories
     ) { }
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.repoService.getReleaseOfRepo(this.repository)
             .subscribe(release => this.release = release);
     }
