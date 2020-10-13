@@ -58,6 +58,7 @@ npm-debug.log
 .idea/
 *.swp
 /nbproject/
+.vscode/
 
 # Config #
 config/githubBasicAuth.json
@@ -65,3 +66,4 @@ config/githubBasicAuth.json
 # github api data #
 src/assets/data
 src/assets/metadata.json
+
