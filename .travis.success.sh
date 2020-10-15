@@ -24,5 +24,5 @@ git add --ignore-removal .
 git add --update :/
 git status
 git commit -m "Updating ${TRAVIS_BRANCH} on ${branch} to ${TRAVIS_COMMIT}"
-git push --force "${repo_url}" "${branch}"
+git push --force --quiet "${repo_url}" "${branch}" >/dev/null 2>&1
 popd
