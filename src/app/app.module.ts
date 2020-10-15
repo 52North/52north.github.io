@@ -13,13 +13,15 @@ import { CategoriesComponent } from './categories/categories.component';
 import { RepositoryComponent } from './home/repository';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { PrivacyStatementComponent } from './privacy-statement/privacy-statement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RepositoryComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    PrivacyStatementComponent
   ],
   imports: [
     CommonModule,

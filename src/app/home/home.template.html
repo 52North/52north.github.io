@@ -1,11 +1,11 @@
 <nav class="nav-header-right2">
   <div class="wrap">
     <ul class="genesis-nav-menu">
-      <span>Search:</span>
+      <span> Search: </span>
       <li class="menu-item">
         <input type="text" name="name" (keyup)="textSearch($event)">
       </li>
-      <span>Sort by:</span>
+      <span> Sort by: </span>
       <li class="menu-item" [class.current-menu-item]="sorting === 'alphabet'">
         <a (click)="sortByAlphabet()">
           <i class="fas fa-sort-alpha-down"></i>

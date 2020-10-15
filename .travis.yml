@@ -11,7 +11,6 @@ after_success: chmod +x ./.travis.success.sh && ./.travis.success.sh
 env:
   global:
     - CXX=g++-4.8
-    - secure: hZ27aKOdXHKPY8TubD3SZvbotSjVkpaW3ZQHdE7e8VOl1nP3WY2zszXB4AdoiOPSAUcsFU88wBRxPb9hGBVHQKvE7E8T2YaIRpM2/jNyn+5onOjG+EW7N+ig6SPaTRFcHIgreTsgoexH1kv2jCKSxWTjBw1n2JDR6er9J6eooVrArCYLeqzyMFaU3sf921OYCmKntIHxGdPirmEbfUIZdYeXTBpMa96Y9yLHPaKUvhRfp2nnxuEtqzkm17q6HodWg3RWbz1tJ6iWxZ80oaXiEWyMCkMD2ewijsiuPUPGvLmFzZIsWm67GUe6CwHCFd0hnCcKO2ebZRztLmj+AgSFeVf5zwmS939IswOtwDlXVMydSw13ma5zZEx8Mqnzzwt/vySeNcDLoxOBn6kAWtLbfN4HeD4UzWb9YQF3Uj7+Nad5oEJW2SLTNWfulNMAcBT9ivqrDG/1Qk13c25kg7Ebx5WyNPBhVwF1ud7iIM4K3Vp4zGZaPVkT2EA/OXlT5SAX/zFbwx/VASt5Te1vjPhg3D7Qd5vYJAJMiNq83xAEmFqOR+FIXKZedeY+cXxtjm2wuC5d23WdKqOEqEhavq8EzJ7os3Lh+lmmz2d4qbcJKpZN4jNIMtl4GNih0dC/8Ac+LrQPthHIxpc9cJBugIFZ21ZCYC8wo7ploVvmk2BRON0=
 addons:
   apt:
     sources:
