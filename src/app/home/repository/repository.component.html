@@ -14,7 +14,7 @@
         |
       </span>
       <i class="far fa-clock"></i>
-      <span>{{repository.pushed_at | date}}</span>
+      <span>{{repository.pushed_at | date: 'mediumDate': null: lang}}</span>
       <div *ngIf="repository.license">{{repository.license.name}}</div>
     </mat-card-subtitle>
     <mat-card-subtitle>

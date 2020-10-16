@@ -14,6 +14,8 @@ export class RepositoryComponent implements OnInit {
 
     public release: any;
 
+    public lang = navigator.language;
+
     constructor(
         public repoService: Repositories
     ) { }
