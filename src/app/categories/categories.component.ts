@@ -20,6 +20,6 @@ export class CategoriesComponent {
     }
 
     showCategory(category: string): void {
-        this.appState.set('selectedCategory', CategoriesJson);
+        this.appState.set('selectedCategory', category);
     }
 }
