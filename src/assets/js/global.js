@@ -8,7 +8,6 @@ jQuery(function( $ ){
 	// Sticky Navigation
 	
 	$(window).scroll(function(){
-		debugger;
 		if(width > 960) {
             var scrollheight = $('.site-header').innerHeight()+1;
             $('.site-header').addClass('fixed');
