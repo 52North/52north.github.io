@@ -1,9 +1,12 @@
-name: Build and Deploy
+name: Build and Deploy (push and daily)
 
 on:
   push:
     branches:
       - develop
+
+  schedule:
+    - cron: '52 0 * * *'
 
 jobs:
   build-and-deploy:
