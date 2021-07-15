@@ -2,12 +2,6 @@
   "name": "arctic-sea",
   "categories": ["Featured", "SensorWeb"]
 }, {
-  "name": "GEONETCast-DataManager",
-  "categories": ["ILWIS"]
-}, {
-  "name": "GEONETCast-Toolbox",
-  "categories": ["ILWIS"]
-}, {
   "name": "helgoland",
   "categories": ["Featured", "SensorWeb"]
 }, {
@@ -21,16 +15,10 @@
   "categories": ["ILWIS"]
 }, {
   "name": "IlwisCore",
-  "categories": ["Featured", "ILWIS"]
-}, {
-  "name": "ISOD-Toolbox",
   "categories": ["ILWIS"]
 }, {
   "name": "javaPS",
   "categories": ["Featured", "GeoProcessing"]
-}, {
-  "name": "MESA-SADC-Toolbox",
-  "categories": ["ILWIS"]
 }, {
   "name": "restful-timeseries-proxy",
   "categories": ["Featured", "SensorWeb"]
@@ -55,12 +43,6 @@
 }, {
   "name": "sos4R",
   "categories": ["Featured", "SensorWeb"]
-}, {
-  "name": "TSConvertTool",
-  "categories": ["ILWIS"]
-}, {
-  "name": "WFS-E-Toolbox",
-  "categories": ["ILWIS"]
 }, {
   "name": "WPS",
   "categories": ["Featured", "GeoProcessing"]
