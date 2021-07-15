@@ -25,4 +25,4 @@ jobs:
           # The branch the action should deploy to.
           branch: master
           # The folder the action should deploy.
-          folder: .
+          folder: dist
