@@ -17,6 +17,9 @@
   "name": "IlwisCore",
   "categories": ["ILWIS"]
 }, {
+  "name": "IlwisObjects",
+  "categories": ["Featured", "ILWIS"]
+}, {
   "name": "javaPS",
   "categories": ["Featured", "GeoProcessing"]
 }, {
