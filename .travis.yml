@@ -2,19 +2,18 @@ sudo: false
 language: node_js
 branches:
   only:
-  - develop
+    - develop
 node_js:
-- 5.6.0
-script: npm run build:prod
+  - 14.1.0
+script: npm run build
 before_script: chmod +x ./.travis.before.sh && ./.travis.before.sh
 after_success: chmod +x ./.travis.success.sh && ./.travis.success.sh
 env:
   global:
-  - CXX=g++-4.8
-  - secure: ne4ee9CdMR4u3qwk6hudnG9mx5cphdIvW8AepjailfmmINa90p4RThgmfoA1vVJU986vccWBrz3vHmWswQnQA+t2KDdAzc/yhPMArdLWqGYUZVYnuBPaoYTd6tM71wFM7gAqfTUl24WXwOVQY0KuDhN/2W9bknNFFyYYZRwkm2iXwj4QybNX/hi0jOCazTX+2anO471R/VQk9uC7eYFmhPFhyvXpVIBpunG5I9iiNs1BPheiNd+lHdAURwgsafKzYPsfB4F1JrXAJ/11IwpLxIjhQgkrWOYk1U89mRbLlGmQrKJYOHmefVdMJ/5IbQZxJmKIf7fwn82OtcGOfKh75C3RgpnQW7Hp23DICA0NoX4wyKOeRy4mreP50xdTW6DDXw6NBZW6VuLlAsle847UjYSjXk67PbAjbaPVFakuyqcVW/O8rMpNQtizTSQKbioaoL3Tf6dDnzKIXbcbu5MxL0XZXRRryOxkGwhjWYfvH7+JzF9JngWP4psQYoRCkuC+zvNhqi85W4Ppt4yY4RxmWRRVvI77QzmhJ8OlAm7RlxLNja9NwJumZxvnNcMbB9keqRKwb8AEZc5SeHO7HQJa6KlTN57+1lj1nkcSZYtO9fRAdb4g3SAtEt2dZdp60vVg9/Y+9LXxHKAC+Gc0aWxyT62lUYsxZzZTXz2jnN7zxJQ=
+    - CXX=g++-4.8
 addons:
   apt:
     sources:
-    - ubuntu-toolchain-r-test
+      - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
+      - g++-4.8

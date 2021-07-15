@@ -1,0 +1,50 @@
+<div class="site-container">
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav-header-right1">
+        <div class="wrap">
+          <ul class="genesis-nav-menu">
+            <li class="menu-item">
+              <a routerLink="/privacy-statement">Privacy Statement</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://wiki.52north.org">Wiki</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://github.com/52North">Github</a>
+            </li>
+            <li class="menu-item">
+              <a href="http://52north.org/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="nav-header-right2">
+        <div class="wrap">
+          <ul class="genesis-nav-menu">
+            <li class="last-update">
+              <span>last Update: {{appState.state.lastUpdate | date: 'short': null: lang}}</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mobile-title-area">
+        <h1 class="site-title">
+          <a href="http://52north.org/">52° North Initiative for Geospatial Open Source Software GmbH</a>
+        </h1>
+        <h2 class="site-description">exploring horizons</h2>
+      </div>
+
+      <nav class="nav-header-main">
+        <app-categories></app-categories>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-inner">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

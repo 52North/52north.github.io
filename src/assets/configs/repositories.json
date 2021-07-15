@@ -1,0 +1,61 @@
+[{
+  "name": "arctic-sea",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "helgoland",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "helgoland-toolbox",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "Ilwis3Downloads",
+  "categories": ["Featured", "ILWIS"]
+}, {
+  "name": "IlwisConnectors",
+  "categories": ["ILWIS"]
+}, {
+  "name": "IlwisCore",
+  "categories": ["ILWIS"]
+}, {
+  "name": "IlwisObjects",
+  "categories": ["Featured", "ILWIS"]
+}, {
+  "name": "javaPS",
+  "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "restful-timeseries-proxy",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "SensorPlanningService",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "SensorWebClient",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "series-rest-api",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "smle",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "SOS",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "sos-importer",
+  "categories": ["SensorWeb"]
+}, {
+  "name": "sos4R",
+  "categories": ["Featured", "SensorWeb"]
+}, {
+  "name": "WPS",
+  "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "wps-js",
+  "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "wpsclient4arcgis",
+  "categories": ["Featured", "GeoProcessing"]
+}, {
+  "name": "wps-ng-client",
+  "categories": ["Featured", "GeoProcessing"]
+}]

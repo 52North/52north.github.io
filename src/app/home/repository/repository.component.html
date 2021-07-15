@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h3>{{repository.name}}</h3>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <i class="fa fa-star"></i>
+      <span>{{repository.stargazers_count}}</span>
+      <i class="fas fa-code-branch"></i>
+      <span>{{repository.forks_count}}</span>
+      <i class="fa fa-eye"></i>
+      <span>{{repository.watchers_count}}</span>
+      <span>
+        |
+      </span>
+      <i class="far fa-clock"></i>
+      <span>{{repository.pushed_at | date: 'mediumDate': null: lang}}</span>
+      <div *ngIf="repository.license">{{repository.license.name}}</div>
+    </mat-card-subtitle>
+    <mat-card-subtitle>
+      <span>{{repository.categories}}</span>
+    </mat-card-subtitle>
+    <!-- <mat-card-subtitle>
+      <span>{{repository.language}}</span>
+      <span>
+        |
+      </span>
+      <span>{{repository.size}}Kb</span>
+    </mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      {{repository.description}}
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="toRepository()">Repository</button>
+    <button *ngIf="release && release.tag_name" (click)="toRelease()">latest release: {{release.tag_name}}</button>
+  </mat-card-actions>
+</mat-card>
