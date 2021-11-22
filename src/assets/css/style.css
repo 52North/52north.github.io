@@ -905,17 +905,6 @@ Footer Navigations
 	display: none;
 }
 
-.responsive-menu-icon::before {
-	color: #4f504a;
-	content: "\f0c9";
-	display: block;
-	font: normal 24px/1 'FontAwesome';
-	margin: 0 auto;
-	padding: 10px;
-	text-align: center;
-}
-
-
 /* ## Toggle Search as Navigation element
 --------------------------------------------- */
 #toggle-search.search-wrap {
@@ -1664,7 +1653,7 @@ box-shadow: 2px 2px 4px 0px rgba(35,39,31,0.5);
 	.genesis-nav-menu.responsive-menu > .menu-item > .sub-menu { display: none; }
 
 	.genesis-nav-menu.responsive-menu .menu-item,
-	.responsive-menu-icon { display: block; }
+	.responsive-menu-icon { display: block; text-align: center; font-size: x-large; }
 
 	.genesis-nav-menu.responsive-menu > .menu-item { border-bottom: 1px solid #4f504a; text-align: left; }
 

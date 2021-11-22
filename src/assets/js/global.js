@@ -25,7 +25,7 @@ jQuery(function( $ ){
 	});
 
 	// Mobile Menu
-	$(".nav-header-main .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"></div>');
+	$(".nav-header-main .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"><i class="fas fa-bars"></i></div>');
 
 	$(".responsive-menu-icon").click(function(){
 		$(this).next(".nav-header-main .genesis-nav-menu").slideToggle();
