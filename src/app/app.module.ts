@@ -27,7 +27,7 @@ import { PrivacyStatementComponent } from './privacy-statement/privacy-statement
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, { useHash: true }),
+    RouterModule.forRoot(ROUTES, { useHash: true, relativeLinkResolution: 'legacy' }),
     MatCardModule,
     BrowserAnimationsModule
   ],
