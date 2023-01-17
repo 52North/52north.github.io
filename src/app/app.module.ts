@@ -2,7 +2,7 @@ import { Repositories } from './home/repository/repository.service';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
+import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
@@ -27,7 +27,7 @@ import { PrivacyStatementComponent } from './privacy-statement/privacy-statement
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(ROUTES, { useHash: true }),
     MatCardModule,
     BrowserAnimationsModule
   ],
