@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import metadataJson from '../assets/metadata.json';
 
 export type InteralStateType = {
-    [key: string]: any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    [key: string]: any;
 };
 
 @Injectable()
 export class AppState {
 
-    // tslint:disable-next-line: variable-name
     private _state: InteralStateType = {};
 
     constructor() {
@@ -25,12 +25,14 @@ export class AppState {
         throw new Error('do not mutate the `.state` directly');
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     get(prop?: any): boolean {
         // use our state getter for the clone
         const state = this.state;
-        return state.hasOwnProperty(prop) ? state[prop] : state;
+        return Object.prototype.hasOwnProperty.call(state, prop) ? state[prop] : state;
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     set(prop: string, value: any): void {
         // internally mutate our state
         this._state[prop] = value;
