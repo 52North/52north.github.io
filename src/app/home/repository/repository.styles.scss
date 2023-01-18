@@ -1,9 +1,11 @@
 mat-card {
+
     mat-card-header {
-        height: 112px;
+        padding-bottom: 10px;
     }
 
     mat-card-subtitle {
+        font-weight: 200;
 
         .fa,
         .fas,
@@ -14,14 +16,16 @@ mat-card {
 
     mat-card-content {
         height: 50px;
+        font-weight: 200;
+        font-size: 14px;
     }
 
     mat-card-actions {
-        margin-left: 0;
-        margin-right: 0;
+        padding: 16px;
 
         button {
             padding: 8px 12px;
+            margin: 0;
         }
     }
 }
