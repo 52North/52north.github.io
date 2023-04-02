@@ -30,7 +30,8 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+         "indent": ["error", 2] // custom rule for enforcing 2-space indentation
       }
     },
     {
