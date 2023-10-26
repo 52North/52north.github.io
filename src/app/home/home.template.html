@@ -3,34 +3,46 @@
     <ul class="genesis-nav-menu">
       <span> Search: </span>
       <li class="menu-item">
-        <input type="text" name="name" (keyup)="textSearch($event)">
+        <input type="text" name="name" (keyup)="textSearch($event)" class="isearch">
+        <div id="hovertxt"><p>Search here</p></div>
       </li>
       <span> Sort by: </span>
       <li class="menu-item" [class.current-menu-item]="sorting === 'alphabet'">
-        <a (click)="sortByAlphabet()">
+        <a (click)="sortByAlphabet()" id="sorttxt">
           <i class="fas fa-sort-alpha-down"></i>
         </a>
+        <div id="sort-text">View by Sorting (alphabet)</div>
       </li>
+      
       <li class="menu-item" [class.current-menu-item]="sorting === 'stars'">
-        <a (click)="sortByStars()">
+        <a (click)="sortByStars()" id="sortstars">
           <i class="fa fa-star"></i>
         </a>
+        <div id="sort-stars">View by Sorting (Stars)</div>
       </li>
+      
       <li class="menu-item" [class.current-menu-item]="sorting === 'forks'">
-        <a (click)="sortByForks()">
+        <a (click)="sortByForks()" id="sortforks">
           <i class="fas fa-code-branch"></i>
         </a>
+        <div id="sort-forks">View by Sorting (Forks)</div>
       </li>
+      
       <li class="menu-item" [class.current-menu-item]="sorting === 'watches'">
-        <a (click)="sortByWatches()">
+        <a (click)="sortByWatches()" class="sort-button">
           <i class="fa fa-eye"></i>
+          <span class="sort-text">View by Sorting(Watches)</span>
         </a>
       </li>
+      
+      
       <li class="menu-item" [class.current-menu-item]="sorting === 'lastUpdates'">
-        <a (click)="sortByLastUpdate()">
+        <a (click)="sortByLastUpdate()" class="sort-button">
           <i class="far fa-clock"></i>
+          <span class="sort-text">View by Sorting(Last Updates)</span>
         </a>
       </li>
+      
     </ul>
   </div>
 </nav>

@@ -206,11 +206,75 @@ input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  border-radius: 32px;
+  border-color: #000;
+  
+}
+
+#hovertxt{
+  visibility: hidden;
+}
+
+input[type="search"]:hover  ~ #hovertxt{
+    visibility: visible;
 }
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/* Initially hide the sort-text */
+#sort-text {
+  display: none;
+}
+
+/* Show the sort-text when hovering over the menu-item */
+.menu-item:hover #sort-text {
+  display: block;
+}
+
+/* Initially hide the sort-stars */
+#sort-stars {
+  display: none;
+}
+
+/* Show the sort-stars when hovering over the menu-item */
+.menu-item:hover #sort-stars {
+  display: block;
+}
+
+/* Initially hide the sort-forks */
+#sort-forks {
+  display: none;
+}
+
+/* Show the sort-forks when hovering over the menu-item */
+.menu-item:hover #sort-forks {
+  display: block;
+}
+
+/* Initially hide the text */
+.sort-text {
+  display: none;
+}
+
+/* Show the text when hovering over the menu item */
+.sort-button:hover .sort-text {
+  display: inline;
+}
+
+
+/* Initially hide the text */
+.sort-text {
+  display: none;
+}
+
+/* Show the text when hovering over the menu item */
+.sort-button:hover .sort-text {
+  display: inline;
+}
+
+
 
 fieldset {
   border: 1px solid #c0c0c0;
