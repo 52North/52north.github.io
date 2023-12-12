@@ -1,1 +1,1 @@
-{"message":"API rate limit exceeded for 74.249.14.255. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.) If you reach out to GitHub Support for help, please include the request ID 1349:764E:219A3DB:4692EEB:65766383.","documentation_url":"https://docs.github.com/rest/overview/rate-limits-for-the-rest-api"}
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/releases/releases#get-the-latest-release"}
